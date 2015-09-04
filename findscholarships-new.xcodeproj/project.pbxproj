@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC886AB91B99DC7E00972B2E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AB81B99DC7E00972B2E /* main.cpp */; };
+		AC886AE81B99E03B00972B2E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AE61B99E03B00972B2E /* main.cpp */; };
+		AC886AEF1B99E3D000972B2E /* Extensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AED1B99E3D000972B2E /* Extensions.cpp */; };
+		AC886AF21B99E41200972B2E /* CharsetConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AF01B99E41200972B2E /* CharsetConverter.cpp */; };
+		AC886AF81B99E4F900972B2E /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AF61B99E4F900972B2E /* Node.cpp */; };
+		AC886AFC1B99E60B00972B2E /* ParserDom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AFA1B99E60B00972B2E /* ParserDom.cpp */; };
+		AC886AFF1B99E65E00972B2E /* ParserSax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AFD1B99E65E00972B2E /* ParserSax.cpp */; };
+		AC886B061B99E8C900972B2E /* Uri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886B041B99E8C900972B2E /* Uri.cpp */; };
+		AC886B091B99E90A00972B2E /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886B071B99E90A00972B2E /* utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +31,27 @@
 
 /* Begin PBXFileReference section */
 		AC886AB51B99DC7E00972B2E /* findscholarships-new */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "findscholarships-new"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC886AB81B99DC7E00972B2E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AC886AE61B99E03B00972B2E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		AC886AED1B99E3D000972B2E /* Extensions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Extensions.cpp; path = html/Extensions.cpp; sourceTree = SOURCE_ROOT; };
+		AC886AEE1B99E3D000972B2E /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Extensions.h; path = html/Extensions.h; sourceTree = SOURCE_ROOT; };
+		AC886AF01B99E41200972B2E /* CharsetConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CharsetConverter.cpp; path = html/CharsetConverter.cpp; sourceTree = SOURCE_ROOT; };
+		AC886AF11B99E41200972B2E /* CharsetConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharsetConverter.h; path = html/CharsetConverter.h; sourceTree = SOURCE_ROOT; };
+		AC886AF41B99E48A00972B2E /* ci_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ci_string.h; path = html/ci_string.h; sourceTree = SOURCE_ROOT; };
+		AC886AF61B99E4F900972B2E /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = html/Node.cpp; sourceTree = SOURCE_ROOT; };
+		AC886AF71B99E4F900972B2E /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = html/Node.h; sourceTree = SOURCE_ROOT; };
+		AC886AF91B99E54C00972B2E /* wincstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wincstring.h; path = html/wincstring.h; sourceTree = SOURCE_ROOT; };
+		AC886AFA1B99E60B00972B2E /* ParserDom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParserDom.cpp; path = html/ParserDom.cpp; sourceTree = SOURCE_ROOT; };
+		AC886AFB1B99E60B00972B2E /* ParserDom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParserDom.h; path = html/ParserDom.h; sourceTree = SOURCE_ROOT; };
+		AC886AFD1B99E65E00972B2E /* ParserSax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParserSax.cpp; path = html/ParserSax.cpp; sourceTree = SOURCE_ROOT; };
+		AC886AFE1B99E65E00972B2E /* ParserSax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParserSax.h; path = html/ParserSax.h; sourceTree = SOURCE_ROOT; };
+		AC886B041B99E8C900972B2E /* Uri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Uri.cpp; path = html/Uri.cpp; sourceTree = SOURCE_ROOT; };
+		AC886B051B99E8C900972B2E /* Uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Uri.h; path = html/Uri.h; sourceTree = SOURCE_ROOT; };
+		AC886B071B99E90A00972B2E /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = html/utils.cpp; sourceTree = SOURCE_ROOT; };
+		AC886B081B99E90A00972B2E /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = html/utils.h; sourceTree = SOURCE_ROOT; };
+		AC886B0A1B99E94600972B2E /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = html/tree.h; sourceTree = SOURCE_ROOT; };
+		AC886B0B1B99E97E00972B2E /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = html/debug.h; sourceTree = SOURCE_ROOT; };
+		AC886B0C1B99E9A400972B2E /* profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = profile.h; path = html/profile.h; sourceTree = SOURCE_ROOT; };
+		AC886B0D1B99EA6E00972B2E /* tld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tld.h; path = html/tld.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +84,37 @@
 		AC886AB71B99DC7E00972B2E /* findscholarships-new */ = {
 			isa = PBXGroup;
 			children = (
-				AC886AB81B99DC7E00972B2E /* main.cpp */,
+				AC886AE61B99E03B00972B2E /* main.cpp */,
+				AC886AE91B99E07000972B2E /* html */,
 			);
 			path = "findscholarships-new";
+			sourceTree = "<group>";
+		};
+		AC886AE91B99E07000972B2E /* html */ = {
+			isa = PBXGroup;
+			children = (
+				AC886AED1B99E3D000972B2E /* Extensions.cpp */,
+				AC886AEE1B99E3D000972B2E /* Extensions.h */,
+				AC886AF01B99E41200972B2E /* CharsetConverter.cpp */,
+				AC886AF11B99E41200972B2E /* CharsetConverter.h */,
+				AC886AF41B99E48A00972B2E /* ci_string.h */,
+				AC886AF61B99E4F900972B2E /* Node.cpp */,
+				AC886AF71B99E4F900972B2E /* Node.h */,
+				AC886AF91B99E54C00972B2E /* wincstring.h */,
+				AC886AFA1B99E60B00972B2E /* ParserDom.cpp */,
+				AC886AFB1B99E60B00972B2E /* ParserDom.h */,
+				AC886AFD1B99E65E00972B2E /* ParserSax.cpp */,
+				AC886AFE1B99E65E00972B2E /* ParserSax.h */,
+				AC886B041B99E8C900972B2E /* Uri.cpp */,
+				AC886B051B99E8C900972B2E /* Uri.h */,
+				AC886B071B99E90A00972B2E /* utils.cpp */,
+				AC886B081B99E90A00972B2E /* utils.h */,
+				AC886B0A1B99E94600972B2E /* tree.h */,
+				AC886B0B1B99E97E00972B2E /* debug.h */,
+				AC886B0C1B99E9A400972B2E /* profile.h */,
+				AC886B0D1B99EA6E00972B2E /* tld.h */,
+			);
+			name = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC886AB91B99DC7E00972B2E /* main.cpp in Sources */,
+				AC886B061B99E8C900972B2E /* Uri.cpp in Sources */,
+				AC886AF21B99E41200972B2E /* CharsetConverter.cpp in Sources */,
+				AC886AFF1B99E65E00972B2E /* ParserSax.cpp in Sources */,
+				AC886AEF1B99E3D000972B2E /* Extensions.cpp in Sources */,
+				AC886AE81B99E03B00972B2E /* main.cpp in Sources */,
+				AC886B091B99E90A00972B2E /* utils.cpp in Sources */,
+				AC886AF81B99E4F900972B2E /* Node.cpp in Sources */,
+				AC886AFC1B99E60B00972B2E /* ParserDom.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +190,7 @@
 		AC886ABA1B99DC7E00972B2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -158,9 +220,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-liconv";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -168,7 +232,7 @@
 		AC886ABB1B99DC7E00972B2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -193,8 +257,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-liconv";
 				SDKROOT = macosx;
 			};
 			name = Release;
