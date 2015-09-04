@@ -14,6 +14,11 @@
 		AC2369C61B9A203C006D35C2 /* ParserSax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369C51B9A203C006D35C2 /* ParserSax.cpp */; };
 		AC2369CC1B9A2232006D35C2 /* Uri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369CB1B9A2232006D35C2 /* Uri.cpp */; };
 		AC2369CF1B9A2271006D35C2 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369CE1B9A2271006D35C2 /* utils.cpp */; };
+		AC2369DC1B9A24F9006D35C2 /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */; };
+		AC2369DE1B9A2527006D35C2 /* ConstantStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */; };
+		AC2369E01B9A2577006D35C2 /* DateConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */; };
+		AC2369E21B9A25A4006D35C2 /* HelperFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */; };
+		AC2369E41B9A25D4006D35C2 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E31B9A25D4006D35C2 /* Logger.cpp */; };
 		AC886AE81B99E03B00972B2E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AE61B99E03B00972B2E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,19 @@
 		AC2369CD1B9A2252006D35C2 /* Uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Uri.h; path = include/html/Uri.h; sourceTree = SOURCE_ROOT; };
 		AC2369CE1B9A2271006D35C2 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = src/html/utils.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369D01B9A2292006D35C2 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = include/html/utils.h; sourceTree = SOURCE_ROOT; };
+		AC2369D11B9A2358006D35C2 /* wingetopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wingetopt.h; path = include/wingetopt.h; sourceTree = SOURCE_ROOT; };
+		AC2369D41B9A23E9006D35C2 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = include/utilities/Configuration.h; sourceTree = SOURCE_ROOT; };
+		AC2369D51B9A241A006D35C2 /* ConstantStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConstantStrings.h; path = include/utilities/ConstantStrings.h; sourceTree = SOURCE_ROOT; };
+		AC2369D61B9A243C006D35C2 /* DateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateConverter.h; path = include/utilities/DateConverter.h; sourceTree = SOURCE_ROOT; };
+		AC2369D71B9A2458006D35C2 /* DateType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateType.h; path = include/utilities/DateType.h; sourceTree = SOURCE_ROOT; };
+		AC2369D81B9A2477006D35C2 /* HelperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelperFunctions.h; path = include/utilities/HelperFunctions.h; sourceTree = SOURCE_ROOT; };
+		AC2369D91B9A249A006D35C2 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = include/utilities/Logger.h; sourceTree = SOURCE_ROOT; };
+		AC2369DA1B9A24B5006D35C2 /* ProgramOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramOptions.h; path = include/utilities/ProgramOptions.h; sourceTree = SOURCE_ROOT; };
+		AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Configuration.cpp; path = src/utilities/Configuration.cpp; sourceTree = SOURCE_ROOT; };
+		AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConstantStrings.cpp; path = src/utilities/ConstantStrings.cpp; sourceTree = SOURCE_ROOT; };
+		AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DateConverter.cpp; path = src/utilities/DateConverter.cpp; sourceTree = SOURCE_ROOT; };
+		AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelperFunctions.cpp; path = src/utilities/HelperFunctions.cpp; sourceTree = SOURCE_ROOT; };
+		AC2369E31B9A25D4006D35C2 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = src/utilities/Logger.cpp; sourceTree = SOURCE_ROOT; };
 		AC886AB51B99DC7E00972B2E /* findscholarships-new */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "findscholarships-new"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC886AE61B99E03B00972B2E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -69,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				AC2369B31B9A1D4F006D35C2 /* html */,
+				AC2369D21B9A23BA006D35C2 /* utilities */,
+				AC2369D11B9A2358006D35C2 /* wingetopt.h */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -97,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2369B51B9A1D5B006D35C2 /* html */,
+				AC2369D31B9A23CA006D35C2 /* utilities */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -113,6 +134,32 @@
 				AC2369CE1B9A2271006D35C2 /* utils.cpp */,
 			);
 			name = html;
+			sourceTree = "<group>";
+		};
+		AC2369D21B9A23BA006D35C2 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC2369D41B9A23E9006D35C2 /* Configuration.h */,
+				AC2369D51B9A241A006D35C2 /* ConstantStrings.h */,
+				AC2369D61B9A243C006D35C2 /* DateConverter.h */,
+				AC2369D71B9A2458006D35C2 /* DateType.h */,
+				AC2369D81B9A2477006D35C2 /* HelperFunctions.h */,
+				AC2369D91B9A249A006D35C2 /* Logger.h */,
+				AC2369DA1B9A24B5006D35C2 /* ProgramOptions.h */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
+		AC2369D31B9A23CA006D35C2 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */,
+				AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */,
+				AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */,
+				AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */,
+				AC2369E31B9A25D4006D35C2 /* Logger.cpp */,
+			);
+			name = utilities;
 			sourceTree = "<group>";
 		};
 		AC886AAC1B99DC7E00972B2E = {
@@ -199,8 +246,13 @@
 			files = (
 				AC2369CC1B9A2232006D35C2 /* Uri.cpp in Sources */,
 				AC2369BC1B9A1E6B006D35C2 /* Extensions.cpp in Sources */,
+				AC2369DE1B9A2527006D35C2 /* ConstantStrings.cpp in Sources */,
 				AC2369C61B9A203C006D35C2 /* ParserSax.cpp in Sources */,
+				AC2369E01B9A2577006D35C2 /* DateConverter.cpp in Sources */,
+				AC2369E21B9A25A4006D35C2 /* HelperFunctions.cpp in Sources */,
 				AC2369CF1B9A2271006D35C2 /* utils.cpp in Sources */,
+				AC2369E41B9A25D4006D35C2 /* Logger.cpp in Sources */,
+				AC2369DC1B9A24F9006D35C2 /* Configuration.cpp in Sources */,
 				AC886AE81B99E03B00972B2E /* main.cpp in Sources */,
 				AC2369B71B9A1D86006D35C2 /* CharsetConverter.cpp in Sources */,
 				AC2369BF1B9A1F50006D35C2 /* Node.cpp in Sources */,
@@ -230,6 +282,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /opt/local/include;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -244,11 +297,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/opt/local/lib,
+					/usr/lib,
+					/opt/local/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				"OTHER_LDFLAGS[arch=*]" = "-liconv";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_system-mt",
+					"-lboost_date_time-mt",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -274,6 +335,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /opt/local/include;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -281,10 +343,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/lib,
+					/opt/local/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				"OTHER_LDFLAGS[arch=*]" = "-liconv";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_date_time-mt",
+					"-lboost_system-mt",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -292,6 +361,15 @@
 		AC886ABD1B99DC7E00972B2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/opt/local/lib,
+					/usr/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-I/opt/local/include",
+					"$(OTHER_CFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -299,6 +377,15 @@
 		AC886ABE1B99DC7E00972B2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/lib,
+					/opt/local/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-I/opt/local/include",
+					"$(OTHER_CFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
