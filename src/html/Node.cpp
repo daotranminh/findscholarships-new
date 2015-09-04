@@ -97,7 +97,7 @@ void Node::parseAttributes()
     }
 }
 
-bool Node::operator==(const Node &n) const 
+bool Node::operator==(const Node &n) const
 {
     if (!isTag() || !n.isTag()) return false;
     return !(strcasecmp(tagName().c_str(), n.tagName().c_str()));

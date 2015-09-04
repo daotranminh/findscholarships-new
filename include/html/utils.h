@@ -33,7 +33,7 @@ namespace htmlcxx {
         std::string convert_link(const std::string &relative, const Uri &root);
         
         /** Create a gml representation of the tree for input of tools like graphviz */
-        std::string serialize_gml(const tree<HTML::Node> &tr); 
+        std::string serialize_gml(const tree<HTML::Node> &tr);
     }
 }
 

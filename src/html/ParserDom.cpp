@@ -124,7 +124,7 @@ void ParserDom::foundTag(Node node, bool isEnd)
     }
 }
 
-ostream &HTML::operator<<(ostream &stream, const tree<HTML::Node> &tr) 
+ostream &HTML::operator<<(ostream &stream, const tree<HTML::Node> &tr)
 {
     
     tree<HTML::Node>::pre_order_iterator it = tr.begin();
@@ -134,7 +134,7 @@ ostream &HTML::operator<<(ostream &stream, const tree<HTML::Node> &tr)
     stream << "-----" << endl;
     
     unsigned int n = 0;
-    while ( it != end ) 
+    while ( it != end )
     {
         
         int cur_depth = tr.depth(it);

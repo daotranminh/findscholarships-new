@@ -327,10 +327,10 @@ static const char *tld[] = {
 };
 static size_t tldOffset(const char *domain) {
     const char *end = domain + strlen(domain);
-    for(unsigned int i = 0; i < 321; ++i) 
+    for(unsigned int i = 0; i < 321; ++i)
     {
         size_t len = strlen(tld[i]);
-        if(strcasecmp(end - len, tld[i]) == 0) 
+        if(strcasecmp(end - len, tld[i]) == 0)
         {
             return len;
         }

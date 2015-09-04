@@ -516,7 +516,7 @@ namespace htmlcxx {
                 ret << "edge [ \n source " << parent_id << "\n target " << label << "\n]" << endl;
                 ret << __serialize_gml(tr, sib, end, label, label);
                 ++sib;
-            }	
+            }
             ret << ends;
             string str = ret.str();
             ret.freeze(0);

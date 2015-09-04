@@ -551,20 +551,20 @@ static const char safe[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
 std::string Uri::encode(const std::string &uri)
 {
-    string ret;	
+    string ret;
     const unsigned char *ptr = (const unsigned char *)uri.c_str();
     ret.reserve(uri.length());
     
     for (; *ptr ; ++ptr)
     {
-        if (!safe[*ptr]) 
+        if (!safe[*ptr])
         {
             char buf[5];
             memset(buf, 0, 5);
             snprintf(buf, 5, "%%%X", (*ptr));
-            ret.append(buf); 	
+            ret.append(buf);
         }
-        else 
+        else
         {
             ret += *ptr;
         }

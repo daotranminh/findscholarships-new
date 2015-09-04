@@ -1802,7 +1802,7 @@ public:
         if(this->node->next_sibling) {
             this->node=this->node->next_sibling;
         }
-        else { 
+        else {
             int relative_depth=0;
         upper:
             do {
@@ -1915,7 +1915,7 @@ public:
     // Sibling iterator
     
     template <class T, class tree_node_allocator>
-    tree<T, tree_node_allocator>::sibling_iterator::sibling_iterator() 
+    tree<T, tree_node_allocator>::sibling_iterator::sibling_iterator()
     : iterator_base()
     {
         set_parent_();
