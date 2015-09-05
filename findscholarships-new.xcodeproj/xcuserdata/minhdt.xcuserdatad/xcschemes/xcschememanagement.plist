@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>fetch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>findscholarships-new.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>html.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>utilities.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>AC1CFA8A1B9A3B5300B755DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC1CFA9A1B9B77DD00B755DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -21,10 +21,25 @@
 		AC1CFA921B9A3B5E00B755DD /* HelperFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */; };
 		AC1CFA931B9A3B5E00B755DD /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E31B9A25D4006D35C2 /* Logger.cpp */; };
 		AC1CFA941B9A3BEB00B755DD /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
+		AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA21B9B781000B755DD /* fetch.cpp */; };
+		AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */; };
+		AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */; };
+		AC1CFAA91B9B7A0E00B755DD /* FetcherManual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA81B9B7A0E00B755DD /* FetcherManual.cpp */; };
+		AC1CFAAB1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */; };
+		AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */; };
 		AC886AE81B99E03B00972B2E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AE61B99E03B00972B2E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AC1CFA991B9B77DD00B755DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		AC886AB31B99DC7E00972B2E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,6 +54,20 @@
 /* Begin PBXFileReference section */
 		AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhtml.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1CFA8B1B9A3B5300B755DD /* libutilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1CFA9B1B9B77DD00B755DD /* fetch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fetch; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1CFAA21B9B781000B755DD /* fetch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fetch.cpp; path = src/fetch/fetch.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherBase.cpp; path = src/fetch/FetcherBase.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherDbworld.cpp; path = src/fetch/FetcherDbworld.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAA81B9B7A0E00B755DD /* FetcherManual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherManual.cpp; path = src/fetch/FetcherManual.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherScholarshipLinks.cpp; path = src/fetch/FetcherScholarshipLinks.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherScholarshipPositions.cpp; path = src/fetch/FetcherScholarshipPositions.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAB01B9B7C9500B755DD /* FetchedInfoBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetchedInfoBase.h; path = include/fetch/FetchedInfoBase.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAB11B9B7CBC00B755DD /* FetchedInfoScholarship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetchedInfoScholarship.h; path = include/fetch/FetchedInfoScholarship.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAB21B9B7CE900B755DD /* FetcherBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherBase.h; path = include/fetch/FetcherBase.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAB31B9B7D3900B755DD /* FetcherDbworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherDbworld.h; path = include/fetch/FetcherDbworld.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAB41B9B7D8900B755DD /* FetcherManual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherManual.h; path = include/fetch/FetcherManual.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAB51B9B7DC400B755DD /* FetcherScholarshipLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherScholarshipLinks.h; path = include/fetch/FetcherScholarshipLinks.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAB61B9B7DEC00B755DD /* FetcherScholarshipPositions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherScholarshipPositions.h; path = include/fetch/FetcherScholarshipPositions.h; sourceTree = SOURCE_ROOT; };
 		AC2369B61B9A1D86006D35C2 /* CharsetConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CharsetConverter.cpp; path = src/html/CharsetConverter.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369B81B9A1DCC006D35C2 /* CharsetConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharsetConverter.h; path = include/html/CharsetConverter.h; sourceTree = SOURCE_ROOT; };
 		AC2369B91B9A1E10006D35C2 /* ci_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ci_string.h; path = include/html/ci_string.h; sourceTree = SOURCE_ROOT; };
@@ -91,6 +120,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC1CFA981B9B77DD00B755DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC886AB21B99DC7E00972B2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,9 +139,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC1CFA951B9A3D1700B755DD /* fetch */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CFAA21B9B781000B755DD /* fetch.cpp */,
+				AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */,
+				AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */,
+				AC1CFAA81B9B7A0E00B755DD /* FetcherManual.cpp */,
+				AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */,
+				AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */,
+			);
+			name = fetch;
+			sourceTree = "<group>";
+		};
+		AC1CFA961B9A3D1D00B755DD /* fetch */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CFAB01B9B7C9500B755DD /* FetchedInfoBase.h */,
+				AC1CFAB11B9B7CBC00B755DD /* FetchedInfoScholarship.h */,
+				AC1CFAB21B9B7CE900B755DD /* FetcherBase.h */,
+				AC1CFAB31B9B7D3900B755DD /* FetcherDbworld.h */,
+				AC1CFAB41B9B7D8900B755DD /* FetcherManual.h */,
+				AC1CFAB51B9B7DC400B755DD /* FetcherScholarshipLinks.h */,
+				AC1CFAB61B9B7DEC00B755DD /* FetcherScholarshipPositions.h */,
+			);
+			name = fetch;
+			sourceTree = "<group>";
+		};
 		AC2369B21B9A1D42006D35C2 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				AC1CFA961B9A3D1D00B755DD /* fetch */,
 				AC2369B31B9A1D4F006D35C2 /* html */,
 				AC2369D21B9A23BA006D35C2 /* utilities */,
 				AC2369D11B9A2358006D35C2 /* wingetopt.h */,
@@ -136,6 +200,7 @@
 		AC2369B41B9A1D56006D35C2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				AC1CFA951B9A3D1700B755DD /* fetch */,
 				AC2369B51B9A1D5B006D35C2 /* html */,
 				AC2369D31B9A23CA006D35C2 /* utilities */,
 			);
@@ -196,6 +261,7 @@
 				AC886AB51B99DC7E00972B2E /* findscholarships-new */,
 				AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */,
 				AC1CFA8B1B9A3B5300B755DD /* libutilities.a */,
+				AC1CFA9B1B9B77DD00B755DD /* fetch */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +330,23 @@
 			productReference = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		AC1CFA9A1B9B77DD00B755DD /* fetch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1CFA9F1B9B77DD00B755DD /* Build configuration list for PBXNativeTarget "fetch" */;
+			buildPhases = (
+				AC1CFA971B9B77DD00B755DD /* Sources */,
+				AC1CFA981B9B77DD00B755DD /* Frameworks */,
+				AC1CFA991B9B77DD00B755DD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fetch;
+			productName = fetch;
+			productReference = AC1CFA9B1B9B77DD00B755DD /* fetch */;
+			productType = "com.apple.product-type.tool";
+		};
 		AC886AB41B99DC7E00972B2E /* findscholarships-new */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC886ABC1B99DC7E00972B2E /* Build configuration list for PBXNativeTarget "findscholarships-new" */;
@@ -296,6 +379,9 @@
 					AC1CFA8A1B9A3B5300B755DD = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					AC1CFA9A1B9B77DD00B755DD = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					AC886AB41B99DC7E00972B2E = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -316,6 +402,7 @@
 				AC886AB41B99DC7E00972B2E /* findscholarships-new */,
 				AC1CFA7A1B9A3A1F00B755DD /* html */,
 				AC1CFA8A1B9A3B5300B755DD /* utilities */,
+				AC1CFA9A1B9B77DD00B755DD /* fetch */,
 			);
 		};
 /* End PBXProject section */
@@ -344,6 +431,19 @@
 				AC1CFA911B9A3B5E00B755DD /* DateConverter.cpp in Sources */,
 				AC1CFA921B9A3B5E00B755DD /* HelperFunctions.cpp in Sources */,
 				AC1CFA931B9A3B5E00B755DD /* Logger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1CFA971B9B77DD00B755DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */,
+				AC1CFAAB1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp in Sources */,
+				AC1CFAA91B9B7A0E00B755DD /* FetcherManual.cpp in Sources */,
+				AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */,
+				AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */,
+				AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +506,26 @@
 					"$(OTHER_CFLAGS)",
 					"-I/opt/local/include",
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC1CFAA01B9B77DD00B755DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC1CFAA11B9B77DD00B755DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -553,6 +673,14 @@
 			buildConfigurations = (
 				AC1CFA8D1B9A3B5300B755DD /* Debug */,
 				AC1CFA8E1B9A3B5300B755DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC1CFA9F1B9B77DD00B755DD /* Build configuration list for PBXNativeTarget "fetch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1CFAA01B9B77DD00B755DD /* Debug */,
+				AC1CFAA11B9B77DD00B755DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
