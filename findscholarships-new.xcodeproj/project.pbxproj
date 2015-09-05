@@ -24,9 +24,10 @@
 		AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA21B9B781000B755DD /* fetch.cpp */; };
 		AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */; };
 		AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */; };
-		AC1CFAA91B9B7A0E00B755DD /* FetcherManual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA81B9B7A0E00B755DD /* FetcherManual.cpp */; };
 		AC1CFAAB1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */; };
 		AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */; };
+		AC1CFAB71B9B99EC00B755DD /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
+		AC1CFAB81B9B99EC00B755DD /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
 		AC886AE81B99E03B00972B2E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AE61B99E03B00972B2E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -58,14 +59,12 @@
 		AC1CFAA21B9B781000B755DD /* fetch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fetch.cpp; path = src/fetch/fetch.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherBase.cpp; path = src/fetch/FetcherBase.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherDbworld.cpp; path = src/fetch/FetcherDbworld.cpp; sourceTree = SOURCE_ROOT; };
-		AC1CFAA81B9B7A0E00B755DD /* FetcherManual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherManual.cpp; path = src/fetch/FetcherManual.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherScholarshipLinks.cpp; path = src/fetch/FetcherScholarshipLinks.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherScholarshipPositions.cpp; path = src/fetch/FetcherScholarshipPositions.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAB01B9B7C9500B755DD /* FetchedInfoBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetchedInfoBase.h; path = include/fetch/FetchedInfoBase.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB11B9B7CBC00B755DD /* FetchedInfoScholarship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetchedInfoScholarship.h; path = include/fetch/FetchedInfoScholarship.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB21B9B7CE900B755DD /* FetcherBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherBase.h; path = include/fetch/FetcherBase.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB31B9B7D3900B755DD /* FetcherDbworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherDbworld.h; path = include/fetch/FetcherDbworld.h; sourceTree = SOURCE_ROOT; };
-		AC1CFAB41B9B7D8900B755DD /* FetcherManual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherManual.h; path = include/fetch/FetcherManual.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB51B9B7DC400B755DD /* FetcherScholarshipLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherScholarshipLinks.h; path = include/fetch/FetcherScholarshipLinks.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB61B9B7DEC00B755DD /* FetcherScholarshipPositions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherScholarshipPositions.h; path = include/fetch/FetcherScholarshipPositions.h; sourceTree = SOURCE_ROOT; };
 		AC2369B61B9A1D86006D35C2 /* CharsetConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CharsetConverter.cpp; path = src/html/CharsetConverter.cpp; sourceTree = SOURCE_ROOT; };
@@ -124,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1CFAB71B9B99EC00B755DD /* libhtml.a in Frameworks */,
+				AC1CFAB81B9B99EC00B755DD /* libutilities.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +146,6 @@
 				AC1CFAA21B9B781000B755DD /* fetch.cpp */,
 				AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */,
 				AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */,
-				AC1CFAA81B9B7A0E00B755DD /* FetcherManual.cpp */,
 				AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */,
 				AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */,
 			);
@@ -159,7 +159,6 @@
 				AC1CFAB11B9B7CBC00B755DD /* FetchedInfoScholarship.h */,
 				AC1CFAB21B9B7CE900B755DD /* FetcherBase.h */,
 				AC1CFAB31B9B7D3900B755DD /* FetcherDbworld.h */,
-				AC1CFAB41B9B7D8900B755DD /* FetcherManual.h */,
 				AC1CFAB51B9B7DC400B755DD /* FetcherScholarshipLinks.h */,
 				AC1CFAB61B9B7DEC00B755DD /* FetcherScholarshipPositions.h */,
 			);
@@ -440,7 +439,6 @@
 			files = (
 				AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */,
 				AC1CFAAB1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp in Sources */,
-				AC1CFAA91B9B7A0E00B755DD /* FetcherManual.cpp in Sources */,
 				AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */,
 				AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */,
 				AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */,
@@ -518,6 +516,17 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_system-mt",
+					"-lboost_date_time-mt",
+					"-lboost_program_options-mt",
+					"-lcurl",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -526,6 +535,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

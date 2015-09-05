@@ -3,26 +3,11 @@
 #include <boost/program_options.hpp>
 
 #include "FetcherDbworld.h"                 // fetch
-#include "FetcherManual.h"                  // fetch
 #include "FetcherScholarshipLinks.h"        // fetch
 #include "FetcherScholarshipPositions.h"    // fetch
 #include "Configuration.h"                  // utilities
 #include "Logger.h"                         // utilities
 #include "ProgramOptions.h"                 // utilities
-
-
-
-void
-fetchManual()
-{
-    FetcherManual fm(Configuration::instance()->pathTemp(),
-                     Configuration::instance()->pathDatabase(),
-                     Configuration::instance()->inputLinks(),
-                     Configuration::instance()->inputFetched());
-    
-    fm.fetch();
-}
-
 
 
 void
@@ -94,15 +79,7 @@ int main(int argc, char *argv[])
     
     DBGINFO("Fetching starts...");
     
-    if (fetch_from == "manual")
-    {
-        DBGDEBUG("pathTemp      = " << Configuration::instance()->pathTemp())
-        DBGDEBUG("inputLinks    = " << Configuration::instance()->inputLinks())
-        DBGDEBUG("inputFetched  = " << Configuration::instance()->inputFetched())
-        
-        fetchManual();
-    }
-    else if (fetch_from == "dbworld")
+    if (fetch_from == "dbworld")
     {
         DBGDEBUG("inputDatabase = " << Configuration::instance()->pathDatabase())
         DBGDEBUG("markerDbworld = " << Configuration::instance()->markerDbworld())

@@ -2,7 +2,7 @@
 #define ___FETCHER_BASE_HPP___
 
 #include <curl/curl.h>
-//#include "FetchedInfo.h"            // fetch
+//#include "FetchedInfo.h"          // fetch
 #include "FetchedInfoScholarship.h" // fetch
 #include "ParserDom.h"              // html
 
