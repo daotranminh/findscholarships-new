@@ -539,6 +539,13 @@
 					"$(OTHER_CFLAGS)",
 					"-I/opt/local/include",
 				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_date_time-mt",
+					"-lboost_system-mt",
+					"-lboost_program_options-mt",
+					"-lcurl",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
