@@ -28,6 +28,25 @@
 		AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAAC1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp */; };
 		AC1CFAB71B9B99EC00B755DD /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
 		AC1CFAB81B9B99EC00B755DD /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
+		AC1CFAC41B9C5EC100B755DD /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAC31B9C5EC100B755DD /* Database.cpp */; };
+		AC1CFAC61B9C5EE700B755DD /* DataEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAC51B9C5EE700B755DD /* DataEntry.cpp */; };
+		AC1CFAC81B9C5F1B00B755DD /* HtmlGenBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAC71B9C5F1B00B755DD /* HtmlGenBase.cpp */; };
+		AC1CFACA1B9C5F6700B755DD /* HtmlGenDbworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAC91B9C5F6700B755DD /* HtmlGenDbworld.cpp */; };
+		AC1CFACC1B9C5F9000B755DD /* HtmlGenScholarshipPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFACB1B9C5F9000B755DD /* HtmlGenScholarshipPosition.cpp */; };
+		AC1CFACE1B9C5FC400B755DD /* HtmlGenScholarshipsLinks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFACD1B9C5FC400B755DD /* HtmlGenScholarshipsLinks.cpp */; };
+		AC1CFAD01B9C5FE500B755DD /* HtmlResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFACF1B9C5FE500B755DD /* HtmlResult.cpp */; };
+		AC1CFAD21B9C600F00B755DD /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAD11B9C600F00B755DD /* Manager.cpp */; };
+		AC1CFAD41B9C602900B755DD /* Title.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAD31B9C602900B755DD /* Title.cpp */; };
+		AC1CFAD61B9C607F00B755DD /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAD51B9C607F00B755DD /* Database.h */; };
+		AC1CFAD81B9C60A900B755DD /* DataEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAD71B9C60A900B755DD /* DataEntry.h */; };
+		AC1CFADA1B9C60F300B755DD /* HtmlGenBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAD91B9C60F300B755DD /* HtmlGenBase.h */; };
+		AC1CFADC1B9C612100B755DD /* HtmlGenDbworld.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFADB1B9C612100B755DD /* HtmlGenDbworld.h */; };
+		AC1CFADE1B9C614200B755DD /* HtmlGenScholarshipPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFADD1B9C614200B755DD /* HtmlGenScholarshipPosition.h */; };
+		AC1CFAE01B9C616B00B755DD /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFADF1B9C616B00B755DD /* Header.h */; };
+		AC1CFAE21B9C618500B755DD /* HtmlResult.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAE11B9C618500B755DD /* HtmlResult.h */; };
+		AC1CFAE41B9C619F00B755DD /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAE31B9C619F00B755DD /* Manager.h */; };
+		AC1CFAE61B9C61CB00B755DD /* Title.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAE51B9C61CB00B755DD /* Title.h */; };
+		AC6D669C1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = AC6D669B1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h */; };
 		AC886AE81B99E03B00972B2E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC886AE61B99E03B00972B2E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +86,25 @@
 		AC1CFAB31B9B7D3900B755DD /* FetcherDbworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherDbworld.h; path = include/fetch/FetcherDbworld.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB51B9B7DC400B755DD /* FetcherScholarshipLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherScholarshipLinks.h; path = include/fetch/FetcherScholarshipLinks.h; sourceTree = SOURCE_ROOT; };
 		AC1CFAB61B9B7DEC00B755DD /* FetcherScholarshipPositions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetcherScholarshipPositions.h; path = include/fetch/FetcherScholarshipPositions.h; sourceTree = SOURCE_ROOT; };
+		AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhtmlgen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1CFAC31B9C5EC100B755DD /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Database.cpp; path = src/htmlgen/Database.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAC51B9C5EE700B755DD /* DataEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataEntry.cpp; path = src/htmlgen/DataEntry.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAC71B9C5F1B00B755DD /* HtmlGenBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HtmlGenBase.cpp; path = src/htmlgen/HtmlGenBase.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAC91B9C5F6700B755DD /* HtmlGenDbworld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HtmlGenDbworld.cpp; path = src/htmlgen/HtmlGenDbworld.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFACB1B9C5F9000B755DD /* HtmlGenScholarshipPosition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HtmlGenScholarshipPosition.cpp; path = src/htmlgen/HtmlGenScholarshipPosition.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFACD1B9C5FC400B755DD /* HtmlGenScholarshipsLinks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HtmlGenScholarshipsLinks.cpp; path = src/htmlgen/HtmlGenScholarshipsLinks.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFACF1B9C5FE500B755DD /* HtmlResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HtmlResult.cpp; path = src/htmlgen/HtmlResult.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAD11B9C600F00B755DD /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Manager.cpp; path = src/htmlgen/Manager.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAD31B9C602900B755DD /* Title.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Title.cpp; path = src/htmlgen/Title.cpp; sourceTree = SOURCE_ROOT; };
+		AC1CFAD51B9C607F00B755DD /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = include/htmlgen/Database.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAD71B9C60A900B755DD /* DataEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataEntry.h; path = include/htmlgen/DataEntry.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAD91B9C60F300B755DD /* HtmlGenBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HtmlGenBase.h; path = include/htmlgen/HtmlGenBase.h; sourceTree = SOURCE_ROOT; };
+		AC1CFADB1B9C612100B755DD /* HtmlGenDbworld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HtmlGenDbworld.h; path = include/htmlgen/HtmlGenDbworld.h; sourceTree = SOURCE_ROOT; };
+		AC1CFADD1B9C614200B755DD /* HtmlGenScholarshipPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HtmlGenScholarshipPosition.h; path = include/htmlgen/HtmlGenScholarshipPosition.h; sourceTree = SOURCE_ROOT; };
+		AC1CFADF1B9C616B00B755DD /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Header.h; path = include/htmlgen/Header.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAE11B9C618500B755DD /* HtmlResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HtmlResult.h; path = include/htmlgen/HtmlResult.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAE31B9C619F00B755DD /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = include/htmlgen/Manager.h; sourceTree = SOURCE_ROOT; };
+		AC1CFAE51B9C61CB00B755DD /* Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Title.h; path = include/htmlgen/Title.h; sourceTree = SOURCE_ROOT; };
 		AC2369B61B9A1D86006D35C2 /* CharsetConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CharsetConverter.cpp; path = src/html/CharsetConverter.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369B81B9A1DCC006D35C2 /* CharsetConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharsetConverter.h; path = include/html/CharsetConverter.h; sourceTree = SOURCE_ROOT; };
 		AC2369B91B9A1E10006D35C2 /* ci_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ci_string.h; path = include/html/ci_string.h; sourceTree = SOURCE_ROOT; };
@@ -100,6 +138,7 @@
 		AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DateConverter.cpp; path = src/utilities/DateConverter.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelperFunctions.cpp; path = src/utilities/HelperFunctions.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369E31B9A25D4006D35C2 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = src/utilities/Logger.cpp; sourceTree = SOURCE_ROOT; };
+		AC6D669B1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HtmlGenScholarshipsLinks.h; path = include/htmlgen/HtmlGenScholarshipsLinks.h; sourceTree = SOURCE_ROOT; };
 		AC886AB51B99DC7E00972B2E /* findscholarships-new */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "findscholarships-new"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC886AE61B99E03B00972B2E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -125,6 +164,13 @@
 			files = (
 				AC1CFAB71B9B99EC00B755DD /* libhtml.a in Frameworks */,
 				AC1CFAB81B9B99EC00B755DD /* libutilities.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1CFABC1B9C5E9200B755DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +211,43 @@
 			name = fetch;
 			sourceTree = "<group>";
 		};
+		AC1CFAB91B9C5DF600B755DD /* htmlgen */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CFAC31B9C5EC100B755DD /* Database.cpp */,
+				AC1CFAC51B9C5EE700B755DD /* DataEntry.cpp */,
+				AC1CFAC71B9C5F1B00B755DD /* HtmlGenBase.cpp */,
+				AC1CFAC91B9C5F6700B755DD /* HtmlGenDbworld.cpp */,
+				AC1CFACB1B9C5F9000B755DD /* HtmlGenScholarshipPosition.cpp */,
+				AC1CFACD1B9C5FC400B755DD /* HtmlGenScholarshipsLinks.cpp */,
+				AC1CFACF1B9C5FE500B755DD /* HtmlResult.cpp */,
+				AC1CFAD11B9C600F00B755DD /* Manager.cpp */,
+				AC1CFAD31B9C602900B755DD /* Title.cpp */,
+			);
+			name = htmlgen;
+			sourceTree = "<group>";
+		};
+		AC1CFABA1B9C5E4600B755DD /* htmlgen */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CFAD51B9C607F00B755DD /* Database.h */,
+				AC1CFAD71B9C60A900B755DD /* DataEntry.h */,
+				AC1CFAD91B9C60F300B755DD /* HtmlGenBase.h */,
+				AC1CFADB1B9C612100B755DD /* HtmlGenDbworld.h */,
+				AC1CFADD1B9C614200B755DD /* HtmlGenScholarshipPosition.h */,
+				AC1CFADF1B9C616B00B755DD /* Header.h */,
+				AC1CFAE11B9C618500B755DD /* HtmlResult.h */,
+				AC1CFAE31B9C619F00B755DD /* Manager.h */,
+				AC1CFAE51B9C61CB00B755DD /* Title.h */,
+				AC6D669B1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h */,
+			);
+			name = htmlgen;
+			sourceTree = "<group>";
+		};
 		AC2369B21B9A1D42006D35C2 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				AC1CFABA1B9C5E4600B755DD /* htmlgen */,
 				AC1CFA961B9A3D1D00B755DD /* fetch */,
 				AC2369B31B9A1D4F006D35C2 /* html */,
 				AC2369D21B9A23BA006D35C2 /* utilities */,
@@ -199,6 +279,7 @@
 		AC2369B41B9A1D56006D35C2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				AC1CFAB91B9C5DF600B755DD /* htmlgen */,
 				AC1CFA951B9A3D1700B755DD /* fetch */,
 				AC2369B51B9A1D5B006D35C2 /* html */,
 				AC2369D31B9A23CA006D35C2 /* utilities */,
@@ -261,6 +342,7 @@
 				AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */,
 				AC1CFA8B1B9A3B5300B755DD /* libutilities.a */,
 				AC1CFA9B1B9B77DD00B755DD /* fetch */,
+				AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,6 +371,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1CFABD1B9C5E9200B755DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1CFAD61B9C607F00B755DD /* Database.h in Headers */,
+				AC6D669C1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h in Headers */,
+				AC1CFADA1B9C60F300B755DD /* HtmlGenBase.h in Headers */,
+				AC1CFAE41B9C619F00B755DD /* Manager.h in Headers */,
+				AC1CFADE1B9C614200B755DD /* HtmlGenScholarshipPosition.h in Headers */,
+				AC1CFAE21B9C618500B755DD /* HtmlResult.h in Headers */,
+				AC1CFAE01B9C616B00B755DD /* Header.h in Headers */,
+				AC1CFAE61B9C61CB00B755DD /* Title.h in Headers */,
+				AC1CFAD81B9C60A900B755DD /* DataEntry.h in Headers */,
+				AC1CFADC1B9C612100B755DD /* HtmlGenDbworld.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +445,23 @@
 			productReference = AC1CFA9B1B9B77DD00B755DD /* fetch */;
 			productType = "com.apple.product-type.tool";
 		};
+		AC1CFABE1B9C5E9200B755DD /* htmlgen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1CFAC01B9C5E9200B755DD /* Build configuration list for PBXNativeTarget "htmlgen" */;
+			buildPhases = (
+				AC1CFABB1B9C5E9200B755DD /* Sources */,
+				AC1CFABC1B9C5E9200B755DD /* Frameworks */,
+				AC1CFABD1B9C5E9200B755DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = htmlgen;
+			productName = htmlgen;
+			productReference = AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		AC886AB41B99DC7E00972B2E /* findscholarships-new */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC886ABC1B99DC7E00972B2E /* Build configuration list for PBXNativeTarget "findscholarships-new" */;
@@ -381,6 +497,9 @@
 					AC1CFA9A1B9B77DD00B755DD = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					AC1CFABE1B9C5E9200B755DD = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					AC886AB41B99DC7E00972B2E = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -402,6 +521,7 @@
 				AC1CFA7A1B9A3A1F00B755DD /* html */,
 				AC1CFA8A1B9A3B5300B755DD /* utilities */,
 				AC1CFA9A1B9B77DD00B755DD /* fetch */,
+				AC1CFABE1B9C5E9200B755DD /* htmlgen */,
 			);
 		};
 /* End PBXProject section */
@@ -442,6 +562,22 @@
 				AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */,
 				AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */,
 				AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1CFABB1B9C5E9200B755DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1CFACA1B9C5F6700B755DD /* HtmlGenDbworld.cpp in Sources */,
+				AC1CFAC81B9C5F1B00B755DD /* HtmlGenBase.cpp in Sources */,
+				AC1CFACC1B9C5F9000B755DD /* HtmlGenScholarshipPosition.cpp in Sources */,
+				AC1CFAC61B9C5EE700B755DD /* DataEntry.cpp in Sources */,
+				AC1CFACE1B9C5FC400B755DD /* HtmlGenScholarshipsLinks.cpp in Sources */,
+				AC1CFAC41B9C5EC100B755DD /* Database.cpp in Sources */,
+				AC1CFAD41B9C602900B755DD /* Title.cpp in Sources */,
+				AC1CFAD01B9C5FE500B755DD /* HtmlResult.cpp in Sources */,
+				AC1CFAD21B9C600F00B755DD /* Manager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +681,36 @@
 					"-lboost_system-mt",
 					"-lboost_program_options-mt",
 					"-lcurl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC1CFAC11B9C5E9200B755DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC1CFAC21B9C5E9200B755DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_PREFIX = lib;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -687,6 +853,7 @@
 				AC1CFA7D1B9A3A1F00B755DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC1CFA8C1B9A3B5300B755DD /* Build configuration list for PBXNativeTarget "utilities" */ = {
 			isa = XCConfigurationList;
@@ -695,6 +862,7 @@
 				AC1CFA8E1B9A3B5300B755DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC1CFA9F1B9B77DD00B755DD /* Build configuration list for PBXNativeTarget "fetch" */ = {
 			isa = XCConfigurationList;
@@ -703,6 +871,16 @@
 				AC1CFAA11B9B77DD00B755DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC1CFAC01B9C5E9200B755DD /* Build configuration list for PBXNativeTarget "htmlgen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1CFAC11B9C5E9200B755DD /* Debug */,
+				AC1CFAC21B9C5E9200B755DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC886AB01B99DC7E00972B2E /* Build configuration list for PBXProject "findscholarships-new" */ = {
 			isa = XCConfigurationList;

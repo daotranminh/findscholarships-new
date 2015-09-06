@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>htmlgen.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>utilities.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>AC1CFA9A1B9B77DD00B755DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC1CFABE1B9C5E9200B755DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
