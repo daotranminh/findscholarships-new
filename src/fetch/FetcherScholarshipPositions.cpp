@@ -29,8 +29,8 @@ FetcherScholarshipPositions::fetchOneScholarshipPosition(std::ofstream &file_out
                                                          const std::string &link_title_str,
                                                          const std::string &deadline_str)
 {
-    std::string sign1 = "<a href=\"";
-    std::string sign2 = "/\"";
+    std::string sign1 = "<a class=\"validating\" href=\"";
+    std::string sign2 = "\">";
     std::string sign3 = "\">";
     std::string sign4 = "</a>";
     
@@ -94,9 +94,15 @@ FetcherScholarshipPositions::fetch()
         if (it->tagName() == "strong")
         {
             ct = it->content(content_gmail);
+            
+            // 20150908:
+            // The link to the scholarship can be in the text content of this node or the previous node with tag <strong>.
+            //
             if (ct.find("Provided by:") != std::string::npos)
             {
-                link_title_str = previous_bold_it->content(content_gmail);
+                link_title_str = it->content(content_gmail);
+                if (link_title_str.find("href=\"") == std::string::npos) link_title_str = previous_bold_it->content(content_gmail);
+                assert(link_title_str.find("href=\"") != std::string::npos);
             }
             if (ct.find("Application Deadline") != std::string::npos)
             {
@@ -130,7 +136,6 @@ FetcherScholarshipPositions::fetch()
                 fetchOneScholarshipPosition(file_output, now, count,
                                             link_title_str, deadline_str);
             }
-            
             previous_bold_it = it;
         }
     }

@@ -51,7 +51,7 @@ fetchScholarshipPositions()
 
 int main(int argc, char *argv[])
 {
-    std::string fetch_from = "dbworld";
+    std::string fetch_from = "slgmail";
     
     
     /*

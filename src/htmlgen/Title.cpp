@@ -166,7 +166,8 @@ Title::getTitleNoSpace() const
     strReplace(tmp, "&#8211;", "");
     strReplace(tmp, "&#038;", "");
     strReplace(tmp, "&amp;", "");
-    
+    strReplace(tmp, "&rsquo;", "");
+
     return tmp;
 }
 

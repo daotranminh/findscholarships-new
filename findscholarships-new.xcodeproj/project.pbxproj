@@ -265,10 +265,10 @@
 		AC2369B21B9A1D42006D35C2 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				AC821C191B9D809E00CE3115 /* init */,
-				AC1CFABA1B9C5E4600B755DD /* htmlgen */,
 				AC1CFA961B9A3D1D00B755DD /* fetch */,
 				AC2369B31B9A1D4F006D35C2 /* html */,
+				AC1CFABA1B9C5E4600B755DD /* htmlgen */,
+				AC821C191B9D809E00CE3115 /* init */,
 				AC2369D21B9A23BA006D35C2 /* utilities */,
 				AC2369D11B9A2358006D35C2 /* wingetopt.h */,
 			);
@@ -298,10 +298,10 @@
 		AC2369B41B9A1D56006D35C2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				AC821C181B9D809700CE3115 /* init */,
-				AC1CFAB91B9C5DF600B755DD /* htmlgen */,
 				AC1CFA951B9A3D1700B755DD /* fetch */,
 				AC2369B51B9A1D5B006D35C2 /* html */,
+				AC1CFAB91B9C5DF600B755DD /* htmlgen */,
+				AC821C181B9D809700CE3115 /* init */,
 				AC2369D31B9A23CA006D35C2 /* utilities */,
 			);
 			name = src;

@@ -20,7 +20,7 @@ int
 main (int argc, const char *argv[])
 {
     //std::string from = "all";
-    std::string from = "dbworld";
+    std::string from = "slgmail";
     
     /*const char *help_description = "\nUsage: fetch [--from=all/manual/dbworld/spgmail]\n";
     boost::program_options::options_description desc(help_description);
