@@ -1,5 +1,7 @@
 #include "DataEntry.h"  // htmlgen
 
+namespace findscholarships {
+
 DataEntry::DataEntry(const Title& title,
                      const std::string& olink,
                      bool is_new /* = false */)
@@ -31,3 +33,5 @@ DataEntry::getOrigLink() const
 {
     return m_OrigLink;
 }
+    
+} // namespace findscholarships

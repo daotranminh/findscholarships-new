@@ -8,6 +8,8 @@
 
 using namespace htmlcxx;
 
+namespace findscholarships {
+
 class FetcherBase
 {
 public:
@@ -47,5 +49,7 @@ writeData1(char *ptr,
            std::size_t size,
            std::size_t nmemb, 
            void *userdata);
+    
+} // namespace findscholarships
 
 #endif // ___FETCHER_BASE_HPP___

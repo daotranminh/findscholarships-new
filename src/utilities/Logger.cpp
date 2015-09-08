@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Logger.h"
 
+namespace findscholarships {
+
 Logger::Logger(std::ostream &outStream, unsigned int levels)
 : out(outStream), printLevels(levels)
 { }
@@ -83,3 +85,5 @@ Logger::print(unsigned int level, const std::string& message)
 
 Logger*
 Logger::_instance = NULL;
+    
+} // namespace findscholarships

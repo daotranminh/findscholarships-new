@@ -7,6 +7,8 @@
 #include "HelperFunctions.h"    // utilities
 #include "Logger.h"             // utilities
 
+namespace findscholarships {
+
 class FetcherDbworld : public FetcherBase
 {
 public:
@@ -35,5 +37,7 @@ private:
     const std::string m_FilenameMarkerDbworld;
     const std::string m_FilenameInputDbworld;
 };
+    
+} // namespace findscholarships
 
 #endif // ___FETCHER_DBWORLD_HPP__

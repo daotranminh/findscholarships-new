@@ -3,6 +3,8 @@
 
 #include "Title.h"  // htmlgen
 
+namespace findscholarships {
+
 class HtmlResult
 {
 public:
@@ -38,5 +40,7 @@ private:
     DatePtr     m_Deadline;
     Title       m_Title;
 };
+    
+} // namespace findscholarships
 
 #endif // ___HTML_RESULT_HPP___

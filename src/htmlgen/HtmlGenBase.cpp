@@ -5,6 +5,8 @@
 
 using namespace htmlcxx;
 
+namespace findscholarships {
+
 void
 HtmlGenBase::process(FetchedInfoScholarship &fis)
 {
@@ -131,4 +133,6 @@ HtmlGenBase::cleanTag(std::string &node_content,
 
 HtmlGenBase::~HtmlGenBase()
 { }
+    
+} // namespace findscholarships
 

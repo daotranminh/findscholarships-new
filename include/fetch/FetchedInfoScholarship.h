@@ -3,6 +3,8 @@
 
 #include "FetchedInfoBase.h"    // fetch
 
+namespace findscholarships {
+
 struct FetchedInfoScholarship : FetchedInfoBase
 {
     FetchedInfoScholarship()
@@ -52,5 +54,7 @@ struct FetchedInfoScholarship : FetchedInfoBase
 typedef boost::shared_ptr<FetchedInfoScholarship> FetchedInfoScholarshipPtr;
 typedef std::vector<FetchedInfoScholarshipPtr> FetchedInfoScholarshipVec;
 typedef boost::shared_ptr<FetchedInfoScholarshipVec> FetchedInfoScholarshipVecPtr;
+    
+} // namespace findscholarships
 
 #endif // ___FETCHED_INFO_SCHOLARSHIP_HPP___

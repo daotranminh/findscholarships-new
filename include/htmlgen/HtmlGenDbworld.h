@@ -3,6 +3,8 @@
 
 #include "HtmlGenBase.h"    // htmlgen
 
+namespace findscholarships {
+
 class HtmlGenDbworld : public HtmlGenBase
 {
 public:
@@ -18,5 +20,6 @@ private:
     }
 };
 
+} // namespace findscholarships
 
 #endif // ___HTML_GEN_DBWORLD_HPP___

@@ -1,6 +1,7 @@
 #include "HelperFunctions.h"
 #include <iostream>
 
+namespace findscholarships {
 
 void
 killSpecialChar(std::string& s,
@@ -103,3 +104,5 @@ convertToLower(std::string &s)
         s[i] = std::tolower(s[i]);
     }  
 }
+    
+} // namespace findscholarships

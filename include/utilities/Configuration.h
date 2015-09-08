@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+namespace findscholarships {
+
 #define IDX_UNDER_GRADUATE 0
 #define IDX_MASTER         1
 #define IDX_PHD            2
@@ -183,5 +185,7 @@ private:
     
     static Configuration* _instance;
 };
+    
+} // namespace findscholarships
 
 #endif // ___CONFIGURATION_HPP___

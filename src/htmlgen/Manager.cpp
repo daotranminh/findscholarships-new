@@ -7,6 +7,7 @@
 #include "ConstantStrings.h"            // utilities
 #include "Logger.h"                     // utilities
 
+namespace findscholarships {
 
 bool
 Manager::getInput(std::ifstream &file_input,
@@ -159,3 +160,5 @@ Manager::getGenerator(const std::string &url)
     
     return NULL;
 }
+    
+} // namespace findscholarships

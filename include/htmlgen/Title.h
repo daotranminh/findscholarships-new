@@ -4,6 +4,7 @@
 #include <string>
 #include "DateType.h"   // utilities
 
+namespace findscholarships {
 
 class Title
 {
@@ -77,5 +78,7 @@ private:
 private:
     std::string m_Title;
 };
+    
+} // namespace findscholarships
 
 #endif // ___TITLE_HPP___

@@ -4,6 +4,7 @@
 #include "DateConverter.h"
 #include "HelperFunctions.h"
 
+namespace findscholarships {
 
 DateConverter*
 DateConverter::_instance = 0;
@@ -132,3 +133,5 @@ DateConverter::convert(const std::string &str_date)
     
     return d;
 }
+    
+} // namespace findscholarships

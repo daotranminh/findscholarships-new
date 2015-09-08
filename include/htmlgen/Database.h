@@ -6,6 +6,8 @@
 
 #include "DataEntry.h"  // htmlgen
 
+namespace findscholarships {
+
 struct DateCompare
 {
     bool
@@ -90,5 +92,6 @@ private:
     DatePtr    m_LowerBound;
 };
 
+} // namespace findscholarships
 
 #endif // ___DATABASE_HPP___

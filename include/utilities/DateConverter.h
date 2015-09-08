@@ -3,6 +3,8 @@
 
 #include "DateType.h"
 
+namespace findscholarships {
+
 class DateConverter
 {
 public:
@@ -35,5 +37,7 @@ private:
     
     static DateConverter *_instance;
 };
+    
+} // namespace findscholarships
 
 #endif // __DATE_CONVERTER_HPP__

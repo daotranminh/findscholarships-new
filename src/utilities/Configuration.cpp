@@ -5,6 +5,8 @@
 #include "Configuration.h"
 #include "Logger.h"
 
+namespace findscholarships {
+
 Configuration*
 Configuration::_instance = 0;
 
@@ -333,3 +335,5 @@ Configuration::readConfig(const std::string& filename)
     readTemplate(category3_tpl, category3);
     readTemplate(category4_tpl, category4);
 }
+
+} // namespace findscholarships

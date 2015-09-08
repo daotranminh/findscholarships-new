@@ -7,7 +7,7 @@
 #include "HelperFunctions.h"            // utilities
 #include "Logger.h"                     // utilities
 
-
+namespace findscholarships {
 
 FetcherScholarshipLinks::FetcherScholarshipLinks(const std::string &path,
                                                  const std::string &pathDatabase,
@@ -72,3 +72,5 @@ FetcherScholarshipLinks::fetch()
     
     DBGINFO("Fetched " << count << " scholarship items from ScholarshipLinks-Gmail!")
 }
+    
+} // namespace findscholarships

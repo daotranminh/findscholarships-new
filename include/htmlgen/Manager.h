@@ -5,6 +5,8 @@
 #include "Database.h"               // htmlgen
 #include "HtmlGenBase.h"            // htmlgen
 
+namespace findscholarships {
+
 class Manager
 {
 public:
@@ -24,6 +26,8 @@ private:
     HtmlGenBase*
     getGenerator(const std::string &url);
 };
+    
+} // namespace findscholarships 
 
 
 #endif // ___MANAGER_HPP___

@@ -6,10 +6,12 @@
 //  Copyright (c) 2015 Minh Dao Tran. All rights reserved.
 //
 
-#ifndef ___INIT_H___
-#define ___INIT_H___
+#ifndef ___INIT_FINDSCHOLARSHIPS_H___
+#define ___INIT_FINDSCHOLARSHIPS_H___
 
 #include <iostream>
+
+namespace findscholarships {
 
 class Init
 {
@@ -25,4 +27,6 @@ private:
     createDir(const std::string &dir);
 };
 
-#endif // ___INIT_H___
+} // namespace findscholarships
+
+#endif // ___INIT_FINDSCHOLARSHIPS_H___

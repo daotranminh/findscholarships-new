@@ -1,6 +1,7 @@
 #include <string>
 #include "ConstantStrings.h"
 
+namespace findscholarships {
 
 ConstantStrings::ConstantStrings()
 : PrefixBegin("__BEGIN_____"),
@@ -87,3 +88,5 @@ ConstantStrings::instance()
     
     return _instance;
 }
+    
+} // namespace findscholarships

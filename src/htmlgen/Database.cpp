@@ -7,6 +7,8 @@
 #include "Logger.h"             // utilities
 #include "DataBase.h"           // htmlgen
 
+namespace findscholarships {
+
 typedef Storage::const_iterator StorageConstIterator;
 typedef std::pair<StorageConstIterator, StorageConstIterator> StorageConstIteratorPair;
 
@@ -369,4 +371,6 @@ Database::showStorage(StoragePtr to_show)
         std::cout << boost::gregorian::to_iso_extended_string(*deadline) << " " << data.getTitle().getTitleNoSpace() << std::endl;
     }
 }
+    
+} // namespace findscholarships
 

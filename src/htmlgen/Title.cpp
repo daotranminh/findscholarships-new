@@ -4,8 +4,7 @@
 #include "Configuration.h"      // utilities
 #include "HelperFunctions.h"    // utilities
 
-
-
+namespace findscholarships {
 
 Title::Title()
 : m_Title("")
@@ -227,3 +226,5 @@ Title::getLink(const DatePtr deadline) const
 {
     return ( Configuration::instance()->rootDomain() + getFilename(deadline) );
 }
+    
+} // namespace findscholarships

@@ -3,6 +3,8 @@
 
 #include "HtmlGenBase.h"    // htmlgen
 
+namespace findscholarships {
+
 class HtmlGenScholarshipPosition : public HtmlGenBase
 {
 public:
@@ -10,5 +12,7 @@ public:
     generate(FetchedInfoScholarship &fis,
              const std::string &filecontent);
 };
+    
+} // namespace findscholarships
 
 #endif // ___HTML_GEN_SCHOLARSHIP_POSITION_HPP___

@@ -5,7 +5,8 @@
 #include "HelperFunctions.h"    // utilities
 #include "Logger.h"             // utilities
 
-
+namespace findscholarships {
+    
 FetcherBase::FetcherBase(const std::string &path,
                          const std::string &pathDatabase)
 :  m_Path(path),
@@ -110,3 +111,5 @@ writeData1(char *ptr,
     stream->write(ptr, count);
     return count;
 }
+    
+} // namespace findscholarships

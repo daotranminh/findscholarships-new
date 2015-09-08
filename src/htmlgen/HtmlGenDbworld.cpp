@@ -1,5 +1,7 @@
 #include "HtmlGenDbworld.h" // htmlgen
 
+namespace findscholarships {
+
 void
 HtmlGenDbworld::generate(FetchedInfoScholarship &fis,
                          const std::string &filecontent)
@@ -31,3 +33,5 @@ HtmlGenDbworld::generate(FetchedInfoScholarship &fis,
     m_HtmlResult.setDeadline(fis.m_Deadline);
     m_HtmlResult.setTitle(title);
 }
+
+} // namespace findscholarships

@@ -1,5 +1,7 @@
 #include "FetcherDbworld.h"   // fetch
 
+namespace findscholarships {
+
 FetcherDbworld::FetcherDbworld(const std::string &path,
                                const std::string &pathDatabase,
                                const std::string &filename_marker_dbworld,
@@ -196,5 +198,7 @@ FetcherDbworld::fetch()
     
     file_input_dbworld.close();
 }
+    
+} // namespace findscholarships
 
 

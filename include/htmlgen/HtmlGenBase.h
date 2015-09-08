@@ -7,6 +7,8 @@
 
 using namespace htmlcxx;
 
+namespace findscholarships {
+
 class HtmlGenBase
 {
 public:
@@ -48,5 +50,6 @@ protected:
     HtmlResult m_HtmlResult;
 };
 
+} // namespace findscholarships
 
 #endif // ___HTML_GEN_BASE_HPP___

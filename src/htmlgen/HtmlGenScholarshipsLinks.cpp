@@ -5,6 +5,8 @@
 
 using namespace htmlcxx;
 
+namespace findscholarships {
+
 //TODO: Copy here
 void
 HtmlGenScholarshipsLinks::generate(FetchedInfoScholarship &fis,
@@ -115,3 +117,5 @@ HtmlGenScholarshipsLinks::extractDeadline(std::string &date_representation)
     
     strReplace(date_representation, " ", "-");
 }
+
+} // namespace findscholarships

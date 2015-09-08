@@ -1,6 +1,8 @@
 #include "HtmlGenScholarshipPosition.h" // htmlgen
 #include "HelperFunctions.h"            // utilities
 
+namespace findscholarships {
+
 void
 HtmlGenScholarshipPosition::generate(FetchedInfoScholarship &fis,
                                      const std::string &filecontent)
@@ -78,3 +80,5 @@ HtmlGenScholarshipPosition::generate(FetchedInfoScholarship &fis,
     m_HtmlResult.setDeadline(fis.m_Deadline);
     m_HtmlResult.setTitle(title);
 }
+
+} // namespace findscholarships

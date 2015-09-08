@@ -45,7 +45,6 @@
 		AC1CFAE41B9C619F00B755DD /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAE31B9C619F00B755DD /* Manager.h */; };
 		AC1CFAE61B9C61CB00B755DD /* Title.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1CFAE51B9C61CB00B755DD /* Title.h */; };
 		AC6D669C1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = AC6D669B1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h */; };
-		AC80DE311B9DA545007C88B5 /* Init.h in Headers */ = {isa = PBXBuildFile; fileRef = AC80DE301B9DA545007C88B5 /* Init.h */; };
 		AC80DE331B9DA55B007C88B5 /* Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE321B9DA55B007C88B5 /* Init.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
 		ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
@@ -145,7 +144,6 @@
 		AC2369E31B9A25D4006D35C2 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = src/utilities/Logger.cpp; sourceTree = SOURCE_ROOT; };
 		AC6D669B1B9CD387004CE102 /* HtmlGenScholarshipsLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HtmlGenScholarshipsLinks.h; path = include/htmlgen/HtmlGenScholarshipsLinks.h; sourceTree = SOURCE_ROOT; };
 		AC80DE2A1B9DA40E007C88B5 /* libinit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libinit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC80DE301B9DA545007C88B5 /* Init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Init.h; path = include/init/Init.h; sourceTree = SOURCE_ROOT; };
 		AC80DE321B9DA55B007C88B5 /* Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Init.cpp; path = src/init/Init.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findscholarships.cpp; sourceTree = SOURCE_ROOT; };
 		ACFA34061B9F69AA00305377 /* findscholarships */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findscholarships; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,7 +266,6 @@
 				AC1CFA961B9A3D1D00B755DD /* fetch */,
 				AC2369B31B9A1D4F006D35C2 /* html */,
 				AC1CFABA1B9C5E4600B755DD /* htmlgen */,
-				AC821C191B9D809E00CE3115 /* init */,
 				AC2369D21B9A23BA006D35C2 /* utilities */,
 				AC2369D11B9A2358006D35C2 /* wingetopt.h */,
 			);
@@ -355,14 +352,6 @@
 			name = init;
 			sourceTree = "<group>";
 		};
-		AC821C191B9D809E00CE3115 /* init */ = {
-			isa = PBXGroup;
-			children = (
-				AC80DE301B9DA545007C88B5 /* Init.h */,
-			);
-			name = init;
-			sourceTree = "<group>";
-		};
 		AC886AAC1B99DC7E00972B2E = {
 			isa = PBXGroup;
 			children = (
@@ -433,7 +422,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC80DE311B9DA545007C88B5 /* Init.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,6 +871,7 @@
 					"-lboost_date_time-mt",
 				);
 				SDKROOT = macosx;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/minhdt/Documents/softwares/web-explorer/include";
 			};
 			name = Debug;
 		};
@@ -1036,6 +1025,7 @@
 				ACFA340C1B9F69AA00305377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

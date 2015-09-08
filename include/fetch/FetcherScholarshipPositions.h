@@ -3,6 +3,8 @@
 
 #include "FetcherBase.h"  // fetch
 
+namespace findscholarships {
+
 class FetcherScholarshipPositions : public FetcherBase
 {
 public:
@@ -28,5 +30,7 @@ private:
     const std::string m_FilenameHtmlScholarshipPositionsGmail;
     const std::string m_FilenameInputScholarshipPositionsGmail;
 };
+
+} // namespace findscholarships
 
 #endif // ___FETCHER_SCHOLARSHIP_POSITIONS_HPP___

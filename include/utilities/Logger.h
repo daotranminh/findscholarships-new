@@ -8,6 +8,8 @@
 #include <sstream>
 #include <string>
 
+namespace findscholarships {
+
 class Logger
 {
 public:
@@ -65,5 +67,7 @@ Logger::instance()->print(level, __debug_stream__.str()); }
 #   define DBGVERB(message)          do { } while (false);
 #   define DBGDEBUG(message)         do { } while (false);
 #endif // ENABLE_DEBUG
+    
+} // namespace findscholarships
 
 #endif // __LOGGER_HPP__

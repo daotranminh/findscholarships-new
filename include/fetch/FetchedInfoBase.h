@@ -5,6 +5,8 @@
 #include <vector>
 #include <boost/shared_ptr.hpp>
 
+namespace findscholarships {
+
 struct FetchedInfoBase
 {
     FetchedInfoBase()
@@ -24,6 +26,8 @@ struct FetchedInfoBase
 typedef boost::shared_ptr<FetchedInfoBase> FetchedInfoBasePtr;
 typedef std::vector<FetchedInfoBasePtr> FetchedInfoBaseVec;
 typedef boost::shared_ptr<FetchedInfoBaseVec> FetchedInfoBaseVecPtr;
+    
+} // namespace findscholarships
 
 
 #endif //  ___FETCHED_INFO_BASE_HPP___

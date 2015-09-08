@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+namespace findscholarships {
+
 class ConstantStrings
 {
 public:
@@ -27,5 +29,7 @@ private:
     
     static ConstantStrings *_instance;
 };
+    
+} // namespace findscholarships
 
 #endif // __CONSTANT_STRINGS_HPP__

@@ -3,6 +3,8 @@
 
 #include "Title.h"  // htmlgen
 
+namespace findscholarships {
+
 class DataEntry
 {
 public:
@@ -24,5 +26,7 @@ private:
     std::string m_OrigLink; // original link where this scholarship is crawled. Just to be on the safe side.
     bool m_IsNew;
 };
+    
+} // namespace findscholarships
 
 #endif // ___DATA_ENTRY_HPP___

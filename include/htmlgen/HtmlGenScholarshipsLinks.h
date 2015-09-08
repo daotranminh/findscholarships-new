@@ -3,6 +3,8 @@
 
 #include "HtmlGenBase.h"    // htmlgen
 
+namespace findscholarships {
+
 class HtmlGenScholarshipsLinks : public HtmlGenBase
 {
 public:
@@ -18,5 +20,6 @@ private:
     extractDeadline(std::string &date_representation);
 };
 
+} // namespace findscholarships
 
 #endif // ___HTML_GEN_SCHOLARSHIPS_LINKS_HPP___

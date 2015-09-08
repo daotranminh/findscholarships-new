@@ -1,5 +1,7 @@
 #include "HtmlResult.h" // htmlgen
 
+namespace findscholarships {
+
 HtmlResult::HtmlResult()
 : m_FullHtmlCode("")
 { }
@@ -78,3 +80,5 @@ HtmlResult::setTitle(const Title& t)
 {
     m_Title = t;
 }
+    
+} // namespace findscholarships

@@ -12,8 +12,10 @@
 
 #include "Configuration.h"  // utilities
 #include "Logger.h"         // utilities
-#include "Init.h"           // init
+#include "init/Init.h"           // init
 
+namespace findscholarships {
+    
 void
 Init::init()
 {
@@ -63,3 +65,5 @@ Init::createDir(const std::string &dir)
     DBGINFO("Init: creating directory " << dir);
     boost::filesystem::create_directory(p);
 }
+    
+} // namespace findscholarships
