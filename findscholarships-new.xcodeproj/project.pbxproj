@@ -51,6 +51,8 @@
 		AC80DE331B9DA55B007C88B5 /* Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE321B9DA55B007C88B5 /* Init.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
 		AC80DE361B9DE5B3007C88B5 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
+		AC9730521B9EC500002D9E00 /* libhtmlgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */; };
+		AC9730531B9EC500002D9E00 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -192,6 +194,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9730521B9EC500002D9E00 /* libhtmlgen.a in Frameworks */,
+				AC9730531B9EC500002D9E00 /* libinit.a in Frameworks */,
 				AC1CFA941B9A3BEB00B755DD /* libutilities.a in Frameworks */,
 				AC1CFA861B9A3B2D00B755DD /* libhtml.a in Frameworks */,
 			);
@@ -937,6 +941,13 @@
 					"-I/opt/local/include",
 					"$(OTHER_CFLAGS)",
 				);
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_system-mt",
+					"-lboost_date_time-mt",
+					"-lboost_filesystem-mt",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -952,6 +963,13 @@
 				OTHER_CPLUSPLUSFLAGS = (
 					"-I/opt/local/include",
 					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_system-mt",
+					"-lboost_date_time-mt",
+					"-lboost_filesystem-mt",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1003,6 +1021,7 @@
 				AC80DE2C1B9DA40E007C88B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC886AB01B99DC7E00972B2E /* Build configuration list for PBXProject "findscholarships-new" */ = {
 			isa = XCConfigurationList;

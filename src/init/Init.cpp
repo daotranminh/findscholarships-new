@@ -24,7 +24,15 @@ Init::init()
     // Now check whether expected directories and files are available in the root directory
     if (!exists(Configuration::instance()->pathDatabase())) createDir(Configuration::instance()->pathDatabase());
     if (!exists(Configuration::instance()->pathTemp())) createDir(Configuration::instance()->pathTemp());
-
+    if (!exists(Configuration::instance()->pathProductionRoot())) createDir(Configuration::instance()->pathProductionRoot());
+    
+    const StringVec &categories = Configuration::instance()->categories();
+    for (StringVec::const_iterator it = categories.begin(); it != categories.end(); it++)
+    {
+        std::string category_dir = Configuration::instance()->pathProductionRoot() + (*it);
+        if (!exists(category_dir)) createDir(category_dir);
+    }
+    
     const StringVec &storages = Configuration::instance()->pathStorages();
     for (StringVec::const_iterator it = storages.begin(); it != storages.end(); it++)
     {
@@ -34,7 +42,7 @@ Init::init()
             DBGINFO("Init: creating file " << it->c_str());
             std::ofstream newfile;
             newfile.open(it->c_str());
-            newfile << " ";
+            newfile << "";
             newfile.close();
         }
     }
