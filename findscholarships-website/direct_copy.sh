@@ -1,0 +1,1 @@
+scp -r findscholarships4/ e0929502@web.student.tuwien.ac.at:/users/home02/e0929502/public_html
