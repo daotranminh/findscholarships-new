@@ -2,6 +2,7 @@
 
 #include <boost/program_options.hpp>
 
+#include "Init.h"                           // init
 #include "FetcherDbworld.h"                 // fetch
 #include "FetcherScholarshipLinks.h"        // fetch
 #include "FetcherScholarshipPositions.h"    // fetch
@@ -50,6 +51,10 @@ fetchScholarshipPositions()
 
 int main(int argc, char *argv[])
 {
+    std::string fetch_from = "dbworld";
+    
+    
+    /*
     std::string fetch_from = "all";
     
     const char *help_description = "\nUsage: fetch [--from=all/manual/dbworld/spgmail/slgmail]\n";
@@ -68,14 +73,12 @@ int main(int argc, char *argv[])
     {
         std::cerr << desc << std::endl;
         exit(1);
-    }
-    
+    }*/
     
     DBGINIT(std::cerr, Logger::INFO | Logger::ERRO | Logger::VERB | Logger::DEBU);
     
-    std::string config_filename = "/Users/minhdt/Documents/softwares/findscholarships-website/config.cfg";
-    
-    Configuration::instance()->readConfig(config_filename);
+    Init init;
+    init.init();
     
     DBGINFO("Fetching starts...");
     

@@ -69,8 +69,8 @@ void ParserDom::foundTag(Node node, bool isEnd)
         while (i != mHtmlTree.begin())
         {
 #ifdef DEBUG
-            cerr << "comparing " << node.tagName() << " with " << i->tagName()<<endl<<":";
-            if (!i->tagName().length()) cerr << "Tag with no name at" << i->offset()<<";"<<i->offset()+i->length();
+//            cerr << "comparing " << node.tagName() << " with " << i->tagName()<<endl<<":";
+//            if (!i->tagName().length()) cerr << "Tag with no name at" << i->offset()<<";"<<i->offset()+i->length();
 #endif
             assert(i->isTag());
             assert(i->tagName().length());
@@ -83,7 +83,7 @@ void ParserDom::foundTag(Node node, bool isEnd)
             
             if (equal)
             {
-                DEBUGP("Found matching tag %s\n", i->tagName().c_str());
+                //DEBUGP("Found matching tag %s\n", i->tagName().c_str());
                 //Closing tag closes this tag
                 //Set length to full range between the opening tag and
                 //closing tag

@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>init.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>utilities.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>AC1CFABE1B9C5E9200B755DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC80DE291B9DA40E007C88B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

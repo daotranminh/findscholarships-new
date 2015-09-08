@@ -73,6 +73,7 @@ extractLink(std::string &s)
     // s is of the form: <A HREF=link>
     strReplace(s, "\"", "");
     strReplace(s, "<A HREF=", "");
+    strReplace(s, "rel=nofollow", "");
     strReplace(s, ">", "");
     strReplace(s, " ", "");
     
