@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC886AB41B99DC7E00972B2E"
-               BuildableName = "findscholarships-new"
-               BlueprintName = "findscholarships-new"
-               ReferencedContainer = "container:findscholarships-new.xcodeproj">
+               BlueprintIdentifier = "AC1CFA9A1B9B77DD00B755DD"
+               BuildableName = "fetch"
+               BlueprintName = "fetch"
+               ReferencedContainer = "container:web-explorer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC886AB41B99DC7E00972B2E"
-            BuildableName = "findscholarships-new"
-            BlueprintName = "findscholarships-new"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            BlueprintIdentifier = "AC1CFA9A1B9B77DD00B755DD"
+            BuildableName = "fetch"
+            BlueprintName = "fetch"
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC886AB41B99DC7E00972B2E"
-            BuildableName = "findscholarships-new"
-            BlueprintName = "findscholarships-new"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            BlueprintIdentifier = "AC1CFA9A1B9B77DD00B755DD"
+            BuildableName = "fetch"
+            BlueprintName = "fetch"
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC886AB41B99DC7E00972B2E"
-            BuildableName = "findscholarships-new"
-            BlueprintName = "findscholarships-new"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            BlueprintIdentifier = "AC1CFA9A1B9B77DD00B755DD"
+            BuildableName = "fetch"
+            BlueprintName = "fetch"
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

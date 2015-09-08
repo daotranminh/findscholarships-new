@@ -17,7 +17,7 @@
                BlueprintIdentifier = "AC1CFABE1B9C5E9200B755DD"
                BuildableName = "libhtmlgen.a"
                BlueprintName = "htmlgen"
-               ReferencedContainer = "container:findscholarships-new.xcodeproj">
+               ReferencedContainer = "container:web-explorer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "AC1CFABE1B9C5E9200B755DD"
             BuildableName = "libhtmlgen.a"
             BlueprintName = "htmlgen"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,7 +63,7 @@
             BlueprintIdentifier = "AC1CFABE1B9C5E9200B755DD"
             BuildableName = "libhtmlgen.a"
             BlueprintName = "htmlgen"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

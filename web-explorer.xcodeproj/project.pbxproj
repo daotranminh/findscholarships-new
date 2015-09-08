@@ -14,13 +14,11 @@
 		AC1CFA831B9A3A3300B755DD /* ParserSax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369C51B9A203C006D35C2 /* ParserSax.cpp */; };
 		AC1CFA841B9A3A3300B755DD /* Uri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369CB1B9A2232006D35C2 /* Uri.cpp */; };
 		AC1CFA851B9A3A3300B755DD /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369CE1B9A2271006D35C2 /* utils.cpp */; };
-		AC1CFA861B9A3B2D00B755DD /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
 		AC1CFA8F1B9A3B5E00B755DD /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */; };
 		AC1CFA901B9A3B5E00B755DD /* ConstantStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */; };
 		AC1CFA911B9A3B5E00B755DD /* DateConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */; };
 		AC1CFA921B9A3B5E00B755DD /* HelperFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */; };
 		AC1CFA931B9A3B5E00B755DD /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E31B9A25D4006D35C2 /* Logger.cpp */; };
-		AC1CFA941B9A3BEB00B755DD /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
 		AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA21B9B781000B755DD /* fetch.cpp */; };
 		AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */; };
 		AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */; };
@@ -50,9 +48,11 @@
 		AC80DE311B9DA545007C88B5 /* Init.h in Headers */ = {isa = PBXBuildFile; fileRef = AC80DE301B9DA545007C88B5 /* Init.h */; };
 		AC80DE331B9DA55B007C88B5 /* Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE321B9DA55B007C88B5 /* Init.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
-		AC80DE361B9DE5B3007C88B5 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
-		AC9730521B9EC500002D9E00 /* libhtmlgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */; };
-		AC9730531B9EC500002D9E00 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
+		ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
+		ACFA340E1B9F6A6E00305377 /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
+		ACFA340F1B9F6A6E00305377 /* libhtmlgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */; };
+		ACFA34101B9F6A6E00305377 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
+		ACFA34111B9F6A6E00305377 /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,7 +65,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		AC886AB31B99DC7E00972B2E /* CopyFiles */ = {
+		ACFA34041B9F69AA00305377 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -148,7 +148,7 @@
 		AC80DE301B9DA545007C88B5 /* Init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Init.h; path = include/init/Init.h; sourceTree = SOURCE_ROOT; };
 		AC80DE321B9DA55B007C88B5 /* Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Init.cpp; path = src/init/Init.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findscholarships.cpp; sourceTree = SOURCE_ROOT; };
-		AC886AB51B99DC7E00972B2E /* findscholarships-new */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "findscholarships-new"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFA34061B9F69AA00305377 /* findscholarships */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findscholarships; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,14 +190,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC886AB21B99DC7E00972B2E /* Frameworks */ = {
+		ACFA34031B9F69AA00305377 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9730521B9EC500002D9E00 /* libhtmlgen.a in Frameworks */,
-				AC9730531B9EC500002D9E00 /* libinit.a in Frameworks */,
-				AC1CFA941B9A3BEB00B755DD /* libutilities.a in Frameworks */,
-				AC1CFA861B9A3B2D00B755DD /* libhtml.a in Frameworks */,
+				ACFA340E1B9F6A6E00305377 /* libhtml.a in Frameworks */,
+				ACFA340F1B9F6A6E00305377 /* libhtmlgen.a in Frameworks */,
+				ACFA34101B9F6A6E00305377 /* libinit.a in Frameworks */,
+				ACFA34111B9F6A6E00305377 /* libutilities.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +366,7 @@
 		AC886AAC1B99DC7E00972B2E = {
 			isa = PBXGroup;
 			children = (
-				AC886AB71B99DC7E00972B2E /* findscholarships-new */,
+				AC886AB71B99DC7E00972B2E /* web-explorer */,
 				AC886AB61B99DC7E00972B2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -374,23 +374,24 @@
 		AC886AB61B99DC7E00972B2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC886AB51B99DC7E00972B2E /* findscholarships-new */,
 				AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */,
 				AC1CFA8B1B9A3B5300B755DD /* libutilities.a */,
 				AC1CFA9B1B9B77DD00B755DD /* fetch */,
 				AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */,
 				AC80DE2A1B9DA40E007C88B5 /* libinit.a */,
+				ACFA34061B9F69AA00305377 /* findscholarships */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC886AB71B99DC7E00972B2E /* findscholarships-new */ = {
+		AC886AB71B99DC7E00972B2E /* web-explorer */ = {
 			isa = PBXGroup;
 			children = (
 				AC2369B41B9A1D56006D35C2 /* src */,
 				AC2369B21B9A1D42006D35C2 /* include */,
 				AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */,
 			);
+			name = "web-explorer";
 			path = "findscholarships-new";
 			sourceTree = "<group>";
 		};
@@ -524,21 +525,21 @@
 			productReference = AC80DE2A1B9DA40E007C88B5 /* libinit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		AC886AB41B99DC7E00972B2E /* findscholarships-new */ = {
+		ACFA34051B9F69AA00305377 /* findscholarships */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC886ABC1B99DC7E00972B2E /* Build configuration list for PBXNativeTarget "findscholarships-new" */;
+			buildConfigurationList = ACFA340A1B9F69AA00305377 /* Build configuration list for PBXNativeTarget "findscholarships" */;
 			buildPhases = (
-				AC886AB11B99DC7E00972B2E /* Sources */,
-				AC886AB21B99DC7E00972B2E /* Frameworks */,
-				AC886AB31B99DC7E00972B2E /* CopyFiles */,
+				ACFA34021B9F69AA00305377 /* Sources */,
+				ACFA34031B9F69AA00305377 /* Frameworks */,
+				ACFA34041B9F69AA00305377 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "findscholarships-new";
-			productName = "findscholarships-new";
-			productReference = AC886AB51B99DC7E00972B2E /* findscholarships-new */;
+			name = findscholarships;
+			productName = findscholarships;
+			productReference = ACFA34061B9F69AA00305377 /* findscholarships */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -565,12 +566,12 @@
 					AC80DE291B9DA40E007C88B5 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					AC886AB41B99DC7E00972B2E = {
+					ACFA34051B9F69AA00305377 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
-			buildConfigurationList = AC886AB01B99DC7E00972B2E /* Build configuration list for PBXProject "findscholarships-new" */;
+			buildConfigurationList = AC886AB01B99DC7E00972B2E /* Build configuration list for PBXProject "web-explorer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -582,12 +583,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC886AB41B99DC7E00972B2E /* findscholarships-new */,
 				AC1CFA7A1B9A3A1F00B755DD /* html */,
 				AC1CFA8A1B9A3B5300B755DD /* utilities */,
 				AC1CFA9A1B9B77DD00B755DD /* fetch */,
 				AC1CFABE1B9C5E9200B755DD /* htmlgen */,
 				AC80DE291B9DA40E007C88B5 /* init */,
+				ACFA34051B9F69AA00305377 /* findscholarships */,
 			);
 		};
 /* End PBXProject section */
@@ -655,11 +656,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC886AB11B99DC7E00972B2E /* Sources */ = {
+		ACFA34021B9F69AA00305377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC80DE361B9DE5B3007C88B5 /* findscholarships.cpp in Sources */,
+				ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,47 +930,43 @@
 			};
 			name = Release;
 		};
-		AC886ABD1B99DC7E00972B2E /* Debug */ = {
+		ACFA340B1B9F69AA00305377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = (
-					/opt/local/lib,
-					/usr/lib,
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
 				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-I/opt/local/include",
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
 					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
 				);
-				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-liconv",
 					"-lboost_system-mt",
 					"-lboost_date_time-mt",
 					"-lboost_filesystem-mt",
+					"-lcurl",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		AC886ABE1B99DC7E00972B2E /* Release */ = {
+		ACFA340C1B9F69AA00305377 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = (
-					/usr/lib,
-					/opt/local/lib,
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-I/opt/local/include",
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
 					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
 				);
-				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-liconv",
-					"-lboost_system-mt",
 					"-lboost_date_time-mt",
+					"-lboost_system-mt",
 					"-lboost_filesystem-mt",
+					"-lcurl",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1023,7 +1020,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC886AB01B99DC7E00972B2E /* Build configuration list for PBXProject "findscholarships-new" */ = {
+		AC886AB01B99DC7E00972B2E /* Build configuration list for PBXProject "web-explorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC886ABA1B99DC7E00972B2E /* Debug */,
@@ -1032,14 +1029,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC886ABC1B99DC7E00972B2E /* Build configuration list for PBXNativeTarget "findscholarships-new" */ = {
+		ACFA340A1B9F69AA00305377 /* Build configuration list for PBXNativeTarget "findscholarships" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC886ABD1B99DC7E00972B2E /* Debug */,
-				AC886ABE1B99DC7E00972B2E /* Release */,
+				ACFA340B1B9F69AA00305377 /* Debug */,
+				ACFA340C1B9F69AA00305377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

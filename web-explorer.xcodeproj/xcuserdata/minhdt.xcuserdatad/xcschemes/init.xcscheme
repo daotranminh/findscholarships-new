@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ACD650781B9A34D100F629C2"
-               BuildableName = "libutilities.a"
-               BlueprintName = "utilities"
-               ReferencedContainer = "container:findscholarships-new.xcodeproj">
+               BlueprintIdentifier = "AC80DE291B9DA40E007C88B5"
+               BuildableName = "libinit.a"
+               BlueprintName = "init"
+               ReferencedContainer = "container:web-explorer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,10 +42,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ACD650781B9A34D100F629C2"
-            BuildableName = "libutilities.a"
-            BlueprintName = "utilities"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            BlueprintIdentifier = "AC80DE291B9DA40E007C88B5"
+            BuildableName = "libinit.a"
+            BlueprintName = "init"
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ACD650781B9A34D100F629C2"
-            BuildableName = "libutilities.a"
-            BlueprintName = "utilities"
-            ReferencedContainer = "container:findscholarships-new.xcodeproj">
+            BlueprintIdentifier = "AC80DE291B9DA40E007C88B5"
+            BuildableName = "libinit.a"
+            BlueprintName = "init"
+            ReferencedContainer = "container:web-explorer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
