@@ -1,4 +1,4 @@
-#include "DataEntry.h"  // htmlgen
+#include "htmlgen/DataEntry.h"
 
 namespace findscholarships {
 

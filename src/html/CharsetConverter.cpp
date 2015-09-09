@@ -2,7 +2,7 @@
 #include <cstdio>
 #include <cstring>
 #include <cerrno>
-#include "CharsetConverter.h"
+#include "html/CharsetConverter.h"
 
 using namespace std;
 using namespace htmlcxx;

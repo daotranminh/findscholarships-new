@@ -1,11 +1,11 @@
 #include <fstream>
 
-#include "HtmlGenDbworld.h"             // htmlgen
-#include "HtmlGenScholarshipPosition.h" // htmlgen
-#include "HtmlGenScholarshipsLinks.h"   // htmlgen
-#include "Manager.h"                    // htmlgen
-#include "ConstantStrings.h"            // utilities
-#include "Logger.h"                     // utilities
+#include "htmlgen/HtmlGenDbworld.h"
+#include "htmlgen/HtmlGenScholarshipPosition.h"
+#include "htmlgen/HtmlGenScholarshipsLinks.h"
+#include "htmlgen/Manager.h"
+#include "utilities/ConstantStrings.h"
+#include "utilities/Logger.h"
 
 namespace findscholarships {
 

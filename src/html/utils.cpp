@@ -2,9 +2,9 @@
 #include <cctype>
 #include <cstring>
 #include <strstream>
-#include "Uri.h"
+#include "html/Uri.h"
 
-#include "utils.h"
+#include "html/utils.h"
 
 using namespace std;
 namespace htmlcxx {

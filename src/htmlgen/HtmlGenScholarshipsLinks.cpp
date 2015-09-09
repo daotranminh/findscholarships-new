@@ -1,7 +1,7 @@
 #include "Node.h"                       // html
 #include "HtmlGenScholarshipsLinks.h"   // htmlgen
-#include "HelperFunctions.h"            // utilities
-#include "Logger.h"                     // utilities
+#include "utilities/HelperFunctions.h"
+#include "utilities/Logger.h"
 
 using namespace htmlcxx;
 

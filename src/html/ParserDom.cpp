@@ -1,11 +1,11 @@
-#include "ParserDom.h"
-#include "wincstring.h"
+#include "html/ParserDom.h"
+#include "html/wincstring.h"
 
 #include <iostream>
 #include <vector>
 
 //#define DEBUG
-#include "debug.h"
+#include "html/debug.h"
 
 #define TAG_NAME_MAX 10
 

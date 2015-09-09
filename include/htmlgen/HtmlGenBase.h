@@ -1,8 +1,8 @@
 #ifndef ___HTML_GEN_BASE_HPP___
 #define ___HTML_GEN_BASE_HPP___
 
-#include "FetchedInfoScholarship.h" // fetch
-#include "HtmlResult.h"             // htmlgen
+#include "fetch/FetchedInfoScholarship.h"
+#include "htmlgen/HtmlResult.h"
 #include "ParserDom.h"              // html
 
 using namespace htmlcxx;

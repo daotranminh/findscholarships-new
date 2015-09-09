@@ -1,7 +1,7 @@
-#include "HtmlGenBase.h"        // htmlgen
-#include "Configuration.h"      // utilities
-#include "ConstantStrings.h"    // utilities
-#include "Logger.h"             // utilities
+#include "htmlgen/HtmlGenBase.h"
+#include "utilities/Configuration.h"
+#include "utilities/ConstantStrings.h"
+#include "utilities/Logger.h"
 
 using namespace htmlcxx;
 

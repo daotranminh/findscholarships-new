@@ -2,10 +2,10 @@
 #include <iostream>
 #include <fstream>
 
-#include "Configuration.h"      // utilities
-#include "HelperFunctions.h"    // utilities
-#include "Logger.h"             // utilities
-#include "DataBase.h"           // htmlgen
+#include "utilities/Configuration.h"
+#include "utilities/HelperFunctions.h"
+#include "utilities/Logger.h"
+#include "htmlgen/DataBase.h"
 
 namespace findscholarships {
 

@@ -1,5 +1,5 @@
 #include <string>
-#include "ConstantStrings.h"
+#include "utilities/ConstantStrings.h"
 
 namespace findscholarships {
 

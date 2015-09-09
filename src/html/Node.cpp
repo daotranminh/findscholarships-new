@@ -1,11 +1,11 @@
 #include <iostream>
 #include <cctype>
 #include <algorithm>
-#include "wincstring.h"
-#include "Node.h"
+#include "html/wincstring.h"
+#include "html/Node.h"
 
 //#define DEBUG
-#include "debug.h"
+#include "html/debug.h"
 
 using namespace std;
 using namespace htmlcxx;

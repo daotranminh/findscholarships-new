@@ -1,11 +1,11 @@
 #ifndef ___FETCHER_DBWORLD_HPP__
 #define ___FETCHER_DBWORLD_HPP__
 
-#include "FetcherBase.h"        // fetch
-#include "ConstantStrings.h"    // utilities
-#include "DateType.h"           // utilities
-#include "HelperFunctions.h"    // utilities
-#include "Logger.h"             // utilities
+#include "fetch/FetcherBase.h"
+#include "utilities/ConstantStrings.h"
+#include "utilities/DateType.h"
+#include "utilities/HelperFunctions.h"
+#include "utilities/Logger.h"
 
 namespace findscholarships {
 

@@ -2,13 +2,13 @@
 
 #include <boost/program_options.hpp>
 
-#include "init/Init.h"                           // init
-#include "FetcherDbworld.h"                 // fetch
-#include "FetcherScholarshipLinks.h"        // fetch
-#include "FetcherScholarshipPositions.h"    // fetch
-#include "Configuration.h"                  // utilities
-#include "Logger.h"                         // utilities
-#include "ProgramOptions.h"                 // utilities
+#include "init/Init.h"
+#include "fetch/FetcherDbworld.h"
+#include "fetch/FetcherScholarshipLinks.h"
+#include "fetch/FetcherScholarshipPositions.h"
+#include "utilities/Configuration.h"
+#include "utilities/Logger.h"
+#include "utilities/ProgramOptions.h"
 
 using namespace findscholarships;
 

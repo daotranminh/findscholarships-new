@@ -2,7 +2,7 @@
 #define ___TITLE_HPP___
 
 #include <string>
-#include "DateType.h"   // utilities
+#include "utilities/DateType.h"
 
 namespace findscholarships {
 

@@ -1,8 +1,8 @@
 #include <iostream>
 
 #include "Title.h"              // htmlgen
-#include "Configuration.h"      // utilities
-#include "HelperFunctions.h"    // utilities
+#include "utilities/Configuration.h"
+#include "utilities/HelperFunctions.h"
 
 namespace findscholarships {
 

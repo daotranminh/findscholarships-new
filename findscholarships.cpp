@@ -5,16 +5,17 @@
 
 #include <boost/program_options.hpp>
 
-#include "Init.h"               // init
-#include "Configuration.h"      // utilities
-#include "HelperFunctions.h"    // utilities
-#include "Logger.h"             // utilities
-#include "ProgramOptions.h"     // utilities
-#include "Database.h"           // htmlgen
-#include "HtmlGenBase.h"        // htmlgen
-#include "Manager.h"            // htmlgen
-#include "Title.h"              // htmlgen
+#include "init/Init.h"
+#include "utilities/Configuration.h"
+#include "utilities/HelperFunctions.h"
+#include "utilities/Logger.h"
+#include "utilities/ProgramOptions.h"
+#include "htmlgen/Database.h"
+#include "htmlgen/HtmlGenBase.h"
+#include "htmlgen/Manager.h"
+#include "htmlgen/Title.h"
 
+using namespace findscholarships;
 
 int
 main (int argc, const char *argv[])
@@ -45,7 +46,7 @@ main (int argc, const char *argv[])
     std::string config_filename = "/Users/minhdt/Documents/softwares/findscholarships-website/config.cfg";
     
     DBGINFO("Initializing...")
-    Init init;
+    findscholarships::Init init;
     init.init();
     
     DBGINFO("Load db")

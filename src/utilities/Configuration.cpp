@@ -2,8 +2,8 @@
 #include <iostream>
 #include <fstream>
 
-#include "Configuration.h"
-#include "Logger.h"
+#include "utilities/Configuration.h"
+#include "utilities/Logger.h"
 
 namespace findscholarships {
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Logger.h"
+#include "utilities/Logger.h"
 
 namespace findscholarships {
 

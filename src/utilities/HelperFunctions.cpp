@@ -1,4 +1,4 @@
-#include "HelperFunctions.h"
+#include "utilities/HelperFunctions.h"
 #include <iostream>
 
 namespace findscholarships {

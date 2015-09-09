@@ -1,5 +1,5 @@
 #include <cstring>
-#include "Extensions.h"
+#include "html/Extensions.h"
 
 using namespace std;
 using namespace htmlcxx;

@@ -1,13 +1,13 @@
-#include "Uri.h"
+#include "html/Uri.h"
 
-#include "wincstring.h"
+#include "html/wincstring.h"
 #include <strstream>
 #include <cstdlib>
 #include <cassert>
-#include "tld.h"
+#include "html/tld.h"
 
 //#define DEBUG
-#include "debug.h"
+#include "html/debug.h"
 
 using namespace std;
 using namespace htmlcxx;

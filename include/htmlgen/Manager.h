@@ -1,9 +1,9 @@
 #ifndef ___MANAGER_HPP___
 #define ___MANAGER_HPP___
 
-#include "FetchedInfoScholarship.h" // fetch
-#include "Database.h"               // htmlgen
-#include "HtmlGenBase.h"            // htmlgen
+#include "fetch/FetchedInfoScholarship.h"
+#include "htmlgen/Database.h"
+#include "htmlgen/HtmlGenBase.h"
 
 namespace findscholarships {
 

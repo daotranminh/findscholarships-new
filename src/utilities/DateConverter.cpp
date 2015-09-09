@@ -1,8 +1,8 @@
 #include <sstream>
 
-#include "ConstantStrings.h"
-#include "DateConverter.h"
-#include "HelperFunctions.h"
+#include "utilities/ConstantStrings.h"
+#include "utilities/DateConverter.h"
+#include "utilities/HelperFunctions.h"
 
 namespace findscholarships {
 
