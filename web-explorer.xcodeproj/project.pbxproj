@@ -14,7 +14,6 @@
 		AC1CFA831B9A3A3300B755DD /* ParserSax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369C51B9A203C006D35C2 /* ParserSax.cpp */; };
 		AC1CFA841B9A3A3300B755DD /* Uri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369CB1B9A2232006D35C2 /* Uri.cpp */; };
 		AC1CFA851B9A3A3300B755DD /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369CE1B9A2271006D35C2 /* utils.cpp */; };
-		AC1CFA8F1B9A3B5E00B755DD /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */; };
 		AC1CFA901B9A3B5E00B755DD /* ConstantStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */; };
 		AC1CFA911B9A3B5E00B755DD /* DateConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */; };
 		AC1CFA921B9A3B5E00B755DD /* HelperFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */; };
@@ -36,6 +35,7 @@
 		AC1CFAD21B9C600F00B755DD /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAD11B9C600F00B755DD /* Manager.cpp */; };
 		AC1CFAD41B9C602900B755DD /* Title.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAD31B9C602900B755DD /* Title.cpp */; };
 		AC3E38FA1BA0CD7000C5287A /* ConfigurationBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */; };
+		AC3E38FC1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */; };
 		AC80DE331B9DA55B007C88B5 /* Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE321B9DA55B007C88B5 /* Init.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
 		ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
@@ -93,12 +93,12 @@
 		AC2369CB1B9A2232006D35C2 /* Uri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Uri.cpp; path = src/html/Uri.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369CE1B9A2271006D35C2 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = src/html/utils.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369D11B9A2358006D35C2 /* wingetopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wingetopt.h; path = include/wingetopt.h; sourceTree = SOURCE_ROOT; };
-		AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Configuration.cpp; path = src/utilities/Configuration.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConstantStrings.cpp; path = src/utilities/ConstantStrings.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DateConverter.cpp; path = src/utilities/DateConverter.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelperFunctions.cpp; path = src/utilities/HelperFunctions.cpp; sourceTree = SOURCE_ROOT; };
 		AC2369E31B9A25D4006D35C2 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = src/utilities/Logger.cpp; sourceTree = SOURCE_ROOT; };
 		AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationBase.cpp; path = src/utilities/ConfigurationBase.cpp; sourceTree = SOURCE_ROOT; };
+		AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationFindscholarships.cpp; path = src/utilities/ConfigurationFindscholarships.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE2A1B9DA40E007C88B5 /* libinit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libinit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80DE321B9DA55B007C88B5 /* Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Init.cpp; path = src/init/Init.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findscholarships.cpp; sourceTree = SOURCE_ROOT; };
@@ -223,12 +223,12 @@
 		AC2369D31B9A23CA006D35C2 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
-				AC2369DB1B9A24F9006D35C2 /* Configuration.cpp */,
 				AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */,
 				AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */,
 				AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */,
 				AC2369E31B9A25D4006D35C2 /* Logger.cpp */,
 				AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */,
+				AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */,
 			);
 			name = utilities;
 			sourceTree = "<group>";
@@ -479,7 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC1CFA8F1B9A3B5E00B755DD /* Configuration.cpp in Sources */,
+				AC3E38FC1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp in Sources */,
 				AC1CFA901B9A3B5E00B755DD /* ConstantStrings.cpp in Sources */,
 				AC1CFA911B9A3B5E00B755DD /* DateConverter.cpp in Sources */,
 				AC3E38FA1BA0CD7000C5287A /* ConfigurationBase.cpp in Sources */,

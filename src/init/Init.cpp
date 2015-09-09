@@ -10,7 +10,7 @@
 
 #include <boost/filesystem.hpp>
 
-#include "utilities/Configuration.h"
+#include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/Logger.h"
 #include "init/Init.h"
 
@@ -21,21 +21,21 @@ Init::init()
 {
     std::string config_filename = "/Users/minhdt/Documents/softwares/findscholarships-website/config.cfg";
     
-    Configuration::instance()->readConfig(config_filename);
+    ConfigurationFindscholarships::instance()->readConfig(config_filename);
 
     // Now check whether expected directories and files are available in the root directory
-    if (!exists(Configuration::instance()->pathDatabase())) createDir(Configuration::instance()->pathDatabase());
-    if (!exists(Configuration::instance()->pathTemp())) createDir(Configuration::instance()->pathTemp());
-    if (!exists(Configuration::instance()->pathProductionRoot())) createDir(Configuration::instance()->pathProductionRoot());
+    if (!exists(ConfigurationFindscholarships::instance()->pathDatabase())) createDir(ConfigurationFindscholarships::instance()->pathDatabase());
+    if (!exists(ConfigurationFindscholarships::instance()->pathTemp())) createDir(ConfigurationFindscholarships::instance()->pathTemp());
+    if (!exists(ConfigurationFindscholarships::instance()->pathProductionRoot())) createDir(ConfigurationFindscholarships::instance()->pathProductionRoot());
     
-    const StringVec &categories = Configuration::instance()->categories();
+    const StringVec &categories = ConfigurationFindscholarships::instance()->categories();
     for (StringVec::const_iterator it = categories.begin(); it != categories.end(); it++)
     {
-        std::string category_dir = Configuration::instance()->pathProductionRoot() + (*it);
+        std::string category_dir = ConfigurationFindscholarships::instance()->pathProductionRoot() + (*it);
         if (!exists(category_dir)) createDir(category_dir);
     }
     
-    const StringVec &storages = Configuration::instance()->pathStorages();
+    const StringVec &storages = ConfigurationFindscholarships::instance()->pathStorages();
     for (StringVec::const_iterator it = storages.begin(); it != storages.end(); it++)
     {
         if(!exists(*it))

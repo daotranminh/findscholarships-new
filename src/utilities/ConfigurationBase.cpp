@@ -4,24 +4,12 @@
 
 #include "utilities/ConfigurationBase.h"
 #include "utilities/Logger.h"
-
-ConfigurationBase*
-ConfigurationBase::_instance = 0;
     
 ConfigurationBase::ConfigurationBase()
 { }
     
 
-ConfigurationBase*
-ConfigurationBase::instance()
-{
-    if (_instance == 0)
-    {
-        _instance = new ConfigurationBase;
-    }
-    return _instance;
-}
-    
+
 std::string
 ConfigurationBase::readLine(const std::string& filename, const std::string& key)
 {
@@ -54,6 +42,4 @@ ConfigurationBase::readLine(const std::string& filename, const std::string& key)
 
 void
 ConfigurationBase::readConfig(const std::string &filename)
-{
-    
-}
+{ }
