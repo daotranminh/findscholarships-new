@@ -3,7 +3,7 @@
 
 #include "fetch/FetchedInfoScholarship.h"
 #include "htmlgen/HtmlResult.h"
-#include "ParserDom.h"              // html
+#include "html/ParserDom.h"
 
 using namespace htmlcxx;
 

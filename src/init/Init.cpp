@@ -10,9 +10,9 @@
 
 #include <boost/filesystem.hpp>
 
-#include "Configuration.h"  // utilities
-#include "Logger.h"         // utilities
-#include "init/Init.h"           // init
+#include "utilities/Configuration.h"
+#include "utilities/Logger.h"
+#include "init/Init.h"
 
 namespace findscholarships {
     
