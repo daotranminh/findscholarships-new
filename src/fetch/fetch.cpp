@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
     
     DBGINIT(std::cerr, Logger::INFO | Logger::ERRO | Logger::VERB | Logger::DEBU);
     
-    findscholarships::Init init;
+    Init init;
     init.init();
     
     DBGINFO("Fetching starts...");

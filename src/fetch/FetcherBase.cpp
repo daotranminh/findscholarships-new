@@ -1,9 +1,9 @@
-#include "FetcherBase.h"        // fetch
-#include "ConstantStrings.h"    // utilities
-#include "DateConverter.h"      // utilities
-#include "DateType.h"           // utilities
-#include "HelperFunctions.h"    // utilities
-#include "Logger.h"             // utilities
+#include "fetch/FetcherBase.h"
+#include "utilities/ConstantStrings.h"
+#include "utilities/DateConverter.h"
+#include "utilities/DateType.h"
+#include "utilities/HelperFunctions.h"
+#include "utilities/Logger.h"
 
 namespace findscholarships {
     

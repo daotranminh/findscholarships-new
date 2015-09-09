@@ -8,8 +8,6 @@
 #include <sstream>
 #include <string>
 
-namespace findscholarships {
-
 class Logger
 {
 public:
@@ -51,7 +49,7 @@ private:
 
 #   define DBGLOG(level, message)    { std::ostringstream __debug_stream__; \
 __debug_stream__ << message; \
-Logger::instance()->print(level, __debug_stream__.str()); }
+::Logger::instance()->print(level, __debug_stream__.str()); }
 
 #   define DBGINFO(message)          DBGLOG(Logger::INFO, message)
 #   define DBGWARN(message)          DBGLOG(Logger::WARN, message)
@@ -67,7 +65,5 @@ Logger::instance()->print(level, __debug_stream__.str()); }
 #   define DBGVERB(message)          do { } while (false);
 #   define DBGDEBUG(message)         do { } while (false);
 #endif // ENABLE_DEBUG
-    
-} // namespace findscholarships
 
 #endif // __LOGGER_HPP__

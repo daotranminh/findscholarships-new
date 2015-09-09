@@ -2,9 +2,8 @@
 #define ___FETCHER_BASE_HPP___
 
 #include <curl/curl.h>
-//#include "FetchedInfo.h"          // fetch
-#include "FetchedInfoScholarship.h" // fetch
-#include "ParserDom.h"              // html
+#include "fetch/FetchedInfoScholarship.h" // fetch
+#include "html/ParserDom.h"              // html
 
 using namespace htmlcxx;
 
