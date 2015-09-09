@@ -6,7 +6,7 @@
 #include <boost/program_options.hpp>
 
 #include "init/Init.h"
-#include "utilities/Configuration.h"
+#include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/HelperFunctions.h"
 #include "utilities/Logger.h"
 #include "utilities/ProgramOptions.h"
@@ -60,22 +60,22 @@ main (int argc, const char *argv[])
     if (from == "manual")
     {
         DBGINFO("From manual input...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputFetched(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputFetched(), db);
     }
     else if (from == "dbworld")
     {
         DBGINFO("From dbworld...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputDbworld(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputDbworld(), db);
     }
     else if (from == "spgmail")
     {
         DBGINFO("From ScholarshipPositions Gmail...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputScholarshipPositionsGmail(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputScholarshipPositionsGmail(), db);
     }
     else if (from == "slgmail")
     {
         DBGINFO("From ScholarshipLinks Gmail...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputScholarshipLinksGmail(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputScholarshipLinksGmail(), db);
     }
     else
     {
@@ -83,11 +83,11 @@ main (int argc, const char *argv[])
         // DBGINFO("From manual input...")
         // man.processBatch(config->pathTemp() + config->inputFetched(), db);
         DBGINFO("From dbworld...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputDbworld(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputDbworld(), db);
         DBGINFO("From ScholarshipPositions Gmail...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputScholarshipPositionsGmail(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputScholarshipPositionsGmail(), db);
         DBGINFO("From ScholarshipLinks Gmail...")
-        man.processBatch(Configuration::instance()->pathTemp() + Configuration::instance()->inputScholarshipLinksGmail(), db);
+        man.processBatch(ConfigurationFindscholarships::instance()->pathTemp() + ConfigurationFindscholarships::instance()->inputScholarshipLinksGmail(), db);
     }
     
     DBGINFO("Finish!")

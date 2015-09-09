@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "Title.h"              // htmlgen
-#include "utilities/Configuration.h"
+#include "htmlgen/Title.h"
+#include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/HelperFunctions.h"
 
 namespace findscholarships {
@@ -116,7 +116,7 @@ Title::classifiedIndex() const
 std::string
 Title::strCategory() const
 {
-    const StringVec& categories = Configuration::instance()->categories();
+    const StringVec& categories = ConfigurationFindscholarships::instance()->categories();
     std::size_t index = classifiedIndex();
     
     return categories[index];
@@ -183,7 +183,7 @@ Title::getFilename(const DatePtr deadline) const
 std::string
 Title::getFileLocation(const DatePtr deadline) const
 {
-    return ( Configuration::instance()->pathProductionRoot() + getFilename(deadline) );
+    return ( ConfigurationFindscholarships::instance()->pathProductionRoot() + getFilename(deadline) );
 }
 
 
@@ -224,7 +224,7 @@ Title::getNotification(const DatePtr deadline,
 std::string
 Title::getLink(const DatePtr deadline) const
 {
-    return ( Configuration::instance()->rootDomain() + getFilename(deadline) );
+    return ( ConfigurationFindscholarships::instance()->rootDomain() + getFilename(deadline) );
 }
     
 } // namespace findscholarships

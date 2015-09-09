@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "utilities/Configuration.h"
+#include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/HelperFunctions.h"
 #include "utilities/Logger.h"
 #include "htmlgen/DataBase.h"
@@ -55,7 +55,7 @@ Database::getStorages() const
 void
 Database::loadDatabase()
 {
-    const StringVec& path_storages = Configuration::instance()->pathStorages();
+    const StringVec& path_storages = ConfigurationFindscholarships::instance()->pathStorages();
     
     // we don't need to load the homepage's database,
     // as whenever we load a category's database, the data entry
@@ -106,7 +106,7 @@ Database::loadDatabase(const std::string& filename, StoragePtr to_load)
 void
 Database::storeDatabase()
 {
-    const StringVec& path_storages = Configuration::instance()->pathStorages();
+    const StringVec& path_storages = ConfigurationFindscholarships::instance()->pathStorages();
     for (std::size_t i = 0; i < TOTAL_STORAGES; ++i)
     {
         storeDatabase(path_storages[i], m_Storages[i]);
@@ -170,7 +170,7 @@ Database::insert(StoragePtr to_load,
         if (!is_new)
         {
             // write to expired list
-            const std::string& expired_filename = Configuration::instance()->pathExpired();
+            const std::string& expired_filename = ConfigurationFindscholarships::instance()->pathExpired();
             std::ofstream expired_file;
             expired_file.open(expired_filename.c_str(), std::ios::app);
             //	  expired_file << getFileLocation(title, deadline) << std::endl;
@@ -225,12 +225,12 @@ Database::insertWithCheck(StoragePtr to_load,
 void
 Database::writeToCategoryFile()
 {
-    const StringVec& category_titles = Configuration::instance()->categoryTitles();
-    const StringVec& categories = Configuration::instance()->categories();
+    const StringVec& category_titles = ConfigurationFindscholarships::instance()->categoryTitles();
+    const StringVec& categories = ConfigurationFindscholarships::instance()->categories();
     
     for (std::size_t i = 0; i < TOTAL_STORAGES; ++i)
     {
-        writeToCategoryFile(Configuration::instance()->pathProductionRoot() + categories[i] + ".html", category_titles[i], m_Storages[i]);
+        writeToCategoryFile(ConfigurationFindscholarships::instance()->pathProductionRoot() + categories[i] + ".html", category_titles[i], m_Storages[i]);
     }
 }
 
@@ -246,12 +246,12 @@ Database::writeToCategoryFile(const std::string& filename,
     
     if (out.is_open())
     {
-        out << Configuration::instance()->categoryPart1() << std::endl;
+        out << ConfigurationFindscholarships::instance()->categoryPart1() << std::endl;
         out << "<title>Findscholarships: " << title << "</title>" << std::endl;
         
-        out << Configuration::instance()->categoryPart2() << std::endl;
+        out << ConfigurationFindscholarships::instance()->categoryPart2() << std::endl;
         out << "<div><center><h2>" << title << "</h2></center></div>" << std::endl;
-        out << Configuration::instance()->categoryPart3() << std::endl;
+        out << ConfigurationFindscholarships::instance()->categoryPart3() << std::endl;
         
         std::string list_new = "";
         std::string list_old = "";
@@ -273,7 +273,7 @@ Database::writeToCategoryFile(const std::string& filename,
         }
         
         out << list_new << list_old << std::endl;
-        out << Configuration::instance()->categoryPart4() << std::endl;
+        out << ConfigurationFindscholarships::instance()->categoryPart4() << std::endl;
         out.close();
     }
     else
@@ -291,7 +291,7 @@ Database::writeNotification(bool single_line)
 {
     StoragePtr homepage = m_Storages[IDX_HOMEPAGE];
     
-    std::string filename = Configuration::instance()->pathDatabase() + currentDateTime();
+    std::string filename = ConfigurationFindscholarships::instance()->pathDatabase() + currentDateTime();
     if (single_line)
     {
         filename = filename + ".single";

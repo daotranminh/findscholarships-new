@@ -1,5 +1,5 @@
 #include "htmlgen/HtmlGenBase.h"
-#include "utilities/Configuration.h"
+#include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/ConstantStrings.h"
 #include "utilities/Logger.h"
 
@@ -60,14 +60,14 @@ void
 HtmlGenBase::dressUp(std::string &html_code,
                      const Title &title)
 {
-    html_code = Configuration::instance()->headerPart1() + "\n" +
+    html_code = ConfigurationFindscholarships::instance()->headerPart1() + "\n" +
     title.getHtmlTitle() + "\n" +
-    Configuration::instance()->headerPart2() + "\n" +
-    Configuration::instance()->bodyPart1() + "\n" +
+    ConfigurationFindscholarships::instance()->headerPart2() + "\n" +
+    ConfigurationFindscholarships::instance()->bodyPart1() + "\n" +
     title.getHeadLineTitle() + "\n" +
-    Configuration::instance()->bodyPart2() + "\n" +
+    ConfigurationFindscholarships::instance()->bodyPart2() + "\n" +
     html_code + "\n" +
-    Configuration::instance()->bodyPart3();
+    ConfigurationFindscholarships::instance()->bodyPart3();
 }
 
 

@@ -36,6 +36,8 @@
 		AC1CFAD41B9C602900B755DD /* Title.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAD31B9C602900B755DD /* Title.cpp */; };
 		AC3E38FA1BA0CD7000C5287A /* ConfigurationBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */; };
 		AC3E38FC1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */; };
+		AC3E38FE1BA0DE8000C5287A /* TrackedSite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FD1BA0DE8000C5287A /* TrackedSite.cpp */; };
+		AC3E39001BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */; };
 		AC80DE331B9DA55B007C88B5 /* Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE321B9DA55B007C88B5 /* Init.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
 		ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
@@ -99,6 +101,8 @@
 		AC2369E31B9A25D4006D35C2 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = src/utilities/Logger.cpp; sourceTree = SOURCE_ROOT; };
 		AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationBase.cpp; path = src/utilities/ConfigurationBase.cpp; sourceTree = SOURCE_ROOT; };
 		AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationFindscholarships.cpp; path = src/utilities/ConfigurationFindscholarships.cpp; sourceTree = SOURCE_ROOT; };
+		AC3E38FD1BA0DE8000C5287A /* TrackedSite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrackedSite.cpp; path = src/utilities/TrackedSite.cpp; sourceTree = SOURCE_ROOT; };
+		AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationWillhabentracker.cpp; path = src/utilities/ConfigurationWillhabentracker.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE2A1B9DA40E007C88B5 /* libinit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libinit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80DE321B9DA55B007C88B5 /* Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Init.cpp; path = src/init/Init.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findscholarships.cpp; sourceTree = SOURCE_ROOT; };
@@ -229,6 +233,8 @@
 				AC2369E31B9A25D4006D35C2 /* Logger.cpp */,
 				AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */,
 				AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */,
+				AC3E38FD1BA0DE8000C5287A /* TrackedSite.cpp */,
+				AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */,
 			);
 			name = utilities;
 			sourceTree = "<group>";
@@ -483,7 +489,9 @@
 				AC1CFA901B9A3B5E00B755DD /* ConstantStrings.cpp in Sources */,
 				AC1CFA911B9A3B5E00B755DD /* DateConverter.cpp in Sources */,
 				AC3E38FA1BA0CD7000C5287A /* ConfigurationBase.cpp in Sources */,
+				AC3E39001BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp in Sources */,
 				AC1CFA921B9A3B5E00B755DD /* HelperFunctions.cpp in Sources */,
+				AC3E38FE1BA0DE8000C5287A /* TrackedSite.cpp in Sources */,
 				AC1CFA931B9A3B5E00B755DD /* Logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
