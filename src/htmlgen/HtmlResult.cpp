@@ -1,4 +1,4 @@
-#include "HtmlResult.h" // htmlgen
+#include "htmlgen/HtmlResult.h"
 
 namespace findscholarships {
 

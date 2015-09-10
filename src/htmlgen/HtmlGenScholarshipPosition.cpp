@@ -1,5 +1,5 @@
-#include "HtmlGenScholarshipPosition.h" // htmlgen
-#include "HelperFunctions.h"            // utilities
+#include "htmlgen/HtmlGenScholarshipPosition.h"
+#include "utilities/HelperFunctions.h"
 
 namespace findscholarships {
 

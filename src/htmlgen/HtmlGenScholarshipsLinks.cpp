@@ -1,5 +1,5 @@
-#include "Node.h"                       // html
-#include "HtmlGenScholarshipsLinks.h"   // htmlgen
+#include "html/Node.h"
+#include "htmlgen/HtmlGenScholarshipsLinks.h"
 #include "utilities/HelperFunctions.h"
 #include "utilities/Logger.h"
 

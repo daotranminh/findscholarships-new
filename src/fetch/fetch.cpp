@@ -2,7 +2,7 @@
 
 #include <boost/program_options.hpp>
 
-#include "init/Init.h"
+#include "init/InitFindscholarships.hpp"
 #include "fetch/FetcherDbworld.h"
 #include "fetch/FetcherScholarshipLinks.h"
 #include "fetch/FetcherScholarshipPositions.h"
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
     
     DBGINIT(std::cerr, Logger::INFO | Logger::ERRO | Logger::VERB | Logger::DEBU);
     
-    Init init;
+    InitFindscholarships init;
     init.init();
     
     DBGINFO("Fetching starts...");

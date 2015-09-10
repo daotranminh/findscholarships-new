@@ -1,28 +1,16 @@
-//
-//  Init.cpp
-//  findscholarships-new
-//
-//  Created by Minh Dao Tran on 07/09/15.
-//  Copyright (c) 2015 Minh Dao Tran. All rights reserved.
-//
-
-#include <fstream>
-
-#include <boost/filesystem.hpp>
-
+#include "init/InitFindscholarships.hpp"
 #include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/Logger.h"
-#include "init/Init.h"
 
 namespace findscholarships {
-    
+
 void
-Init::init()
+InitFindscholarships::init()
 {
     std::string config_filename = "/Users/minhdt/Documents/softwares/findscholarships-website/config.cfg";
     
     ConfigurationFindscholarships::instance()->readConfig(config_filename);
-
+    
     // Now check whether expected directories and files are available in the root directory
     if (!exists(ConfigurationFindscholarships::instance()->pathDatabase())) createDir(ConfigurationFindscholarships::instance()->pathDatabase());
     if (!exists(ConfigurationFindscholarships::instance()->pathTemp())) createDir(ConfigurationFindscholarships::instance()->pathTemp());
@@ -50,20 +38,4 @@ Init::init()
     }
 }
 
-bool
-Init::exists(const std::string &name)
-{
-    boost::filesystem::path p(name);
-    return boost::filesystem::exists(p);
-}
-
-
-void
-Init::createDir(const std::string &dir)
-{
-    boost::filesystem::path p(dir);
-    DBGINFO("Init: creating directory " << dir);
-    boost::filesystem::create_directory(p);
-}
-    
 } // namespace findscholarships

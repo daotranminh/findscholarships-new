@@ -5,7 +5,7 @@
 
 #include <boost/program_options.hpp>
 
-#include "init/Init.h"
+#include "init/InitFindscholarships.hpp"
 #include "utilities/ConfigurationFindscholarships.h"
 #include "utilities/HelperFunctions.h"
 #include "utilities/Logger.h"
@@ -46,7 +46,7 @@ main (int argc, const char *argv[])
     std::string config_filename = "/Users/minhdt/Documents/softwares/findscholarships-website/config.cfg";
     
     DBGINFO("Initializing...")
-    findscholarships::Init init;
+    InitFindscholarships init;
     init.init();
     
     DBGINFO("Load db")
