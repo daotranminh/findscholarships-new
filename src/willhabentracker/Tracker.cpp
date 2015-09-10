@@ -72,7 +72,7 @@ Tracker::getOneDataItem(const std::string &content,
     float price = 0;
     std::string desc = "";
     
-    while (it->text() != "<p class=\"dealer\">")
+    while (it->text() != "<div class=\"media-body\">")
     {
         ++it;
         
@@ -91,7 +91,7 @@ Tracker::getOneDataItem(const std::string &content,
         }
         
         // get price
-        if (it->tagName() == "p" && it->text().find("class=\"price\"") != std::string::npos)
+        if (it->tagName() == "p" && it->text().find("class=\"info-2 top-offset clearfix\"") != std::string::npos)
         {
             if (!gratis)
             {
@@ -111,7 +111,7 @@ Tracker::getOneDataItem(const std::string &content,
         }
         
         // get description
-        if (it->tagName() == "p" && it->text().find("class=\"description\"") != std::string::npos)
+        if (it->tagName() == "p" && it->text().find("itemprop=\'description\'") != std::string::npos)
         {
             desc = it->content(content);
             desc = desc.substr(1);
@@ -154,13 +154,23 @@ Tracker::track(bool gratis)
     
     for (tree<HTML::Node>::iterator it = dom.begin(); it != dom.end(); ++it)
     {
-        if (it->tagName() == "li" && it->text().find("clearfix") != std::string::npos)
+        if (it->tagName() == "li")
         {
+            //std::cout << it->text() << std::endl << std::endl;
+        
+//        if (it->tagName() == "li" && it->text().find("clearfix") != std::string::npos)
+//        {
             // ToDo: check for ignore list
+  
+            std::string ct = it->content(content);
             
-            DataItemPtr di = getOneDataItem(content, it, gratis);
-            if (!inIgnoreList(di->m_URL))
-                db->add(di);
+            if (ct.find("info-2 top-offset clearfix") != std::string::npos)
+            {
+                std::cout << ct << std::endl << std::endl;
+                DataItemPtr di = getOneDataItem(content, it, gratis);
+                if (!inIgnoreList(di->m_URL))
+                    db->add(di);
+            }
         }
     }
     
