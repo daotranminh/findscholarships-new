@@ -38,6 +38,13 @@
 		AC3E38FC1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */; };
 		AC3E38FE1BA0DE8000C5287A /* TrackedSite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FD1BA0DE8000C5287A /* TrackedSite.cpp */; };
 		AC3E39001BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */; };
+		AC5D5D011BA1AF7C00610E95 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC5D5D001BA1AF7C00610E95 /* Database.cpp */; };
+		AC5D5D031BA1AFF400610E95 /* willhabentracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC5D5D021BA1AFF400610E95 /* willhabentracker.cpp */; };
+		AC5D5D051BA1B08400610E95 /* DataItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC5D5D041BA1B08400610E95 /* DataItem.cpp */; };
+		AC5D5D071BA1B0BF00610E95 /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC5D5D061BA1B0BF00610E95 /* Manager.cpp */; };
+		AC5D5D091BA1B0E900610E95 /* Tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC5D5D081BA1B0E900610E95 /* Tracker.cpp */; };
+		AC5D5D0A1BA1B2E300610E95 /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
+		AC5D5D0B1BA1B2E600610E95 /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
 		AC80DE331B9DA55B007C88B5 /* Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE321B9DA55B007C88B5 /* Init.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
 		ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
@@ -49,6 +56,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AC1CFA991B9B77DD00B755DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AC5D5CF71BA1AF6500610E95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -103,6 +119,12 @@
 		AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationFindscholarships.cpp; path = src/utilities/ConfigurationFindscholarships.cpp; sourceTree = SOURCE_ROOT; };
 		AC3E38FD1BA0DE8000C5287A /* TrackedSite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrackedSite.cpp; path = src/utilities/TrackedSite.cpp; sourceTree = SOURCE_ROOT; };
 		AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigurationWillhabentracker.cpp; path = src/utilities/ConfigurationWillhabentracker.cpp; sourceTree = SOURCE_ROOT; };
+		AC5D5CF91BA1AF6500610E95 /* willhabentracker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = willhabentracker; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5D5D001BA1AF7C00610E95 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Database.cpp; path = src/willhabentracker/Database.cpp; sourceTree = SOURCE_ROOT; };
+		AC5D5D021BA1AFF400610E95 /* willhabentracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = willhabentracker.cpp; path = src/willhabentracker.cpp; sourceTree = SOURCE_ROOT; };
+		AC5D5D041BA1B08400610E95 /* DataItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataItem.cpp; path = src/willhabentracker/DataItem.cpp; sourceTree = SOURCE_ROOT; };
+		AC5D5D061BA1B0BF00610E95 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Manager.cpp; path = src/willhabentracker/Manager.cpp; sourceTree = SOURCE_ROOT; };
+		AC5D5D081BA1B0E900610E95 /* Tracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tracker.cpp; path = src/willhabentracker/Tracker.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE2A1B9DA40E007C88B5 /* libinit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libinit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80DE321B9DA55B007C88B5 /* Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Init.cpp; path = src/init/Init.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findscholarships.cpp; sourceTree = SOURCE_ROOT; };
@@ -138,6 +160,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5D5CF61BA1AF6500610E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5D5D0B1BA1B2E600610E95 /* libutilities.a in Frameworks */,
+				AC5D5D0A1BA1B2E300610E95 /* libhtml.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +237,7 @@
 				AC1CFAB91B9C5DF600B755DD /* htmlgen */,
 				AC821C181B9D809700CE3115 /* init */,
 				AC2369D31B9A23CA006D35C2 /* utilities */,
+				AC5D5CF41BA1AEDE00610E95 /* willhabentracker */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -227,16 +259,27 @@
 		AC2369D31B9A23CA006D35C2 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */,
+				AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */,
+				AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */,
 				AC2369DD1B9A2527006D35C2 /* ConstantStrings.cpp */,
 				AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */,
 				AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */,
 				AC2369E31B9A25D4006D35C2 /* Logger.cpp */,
-				AC3E38F91BA0CD7000C5287A /* ConfigurationBase.cpp */,
-				AC3E38FB1BA0D7F500C5287A /* ConfigurationFindscholarships.cpp */,
 				AC3E38FD1BA0DE8000C5287A /* TrackedSite.cpp */,
-				AC3E38FF1BA0DF8900C5287A /* ConfigurationWillhabentracker.cpp */,
 			);
 			name = utilities;
+			sourceTree = "<group>";
+		};
+		AC5D5CF41BA1AEDE00610E95 /* willhabentracker */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D5D001BA1AF7C00610E95 /* Database.cpp */,
+				AC5D5D041BA1B08400610E95 /* DataItem.cpp */,
+				AC5D5D061BA1B0BF00610E95 /* Manager.cpp */,
+				AC5D5D081BA1B0E900610E95 /* Tracker.cpp */,
+			);
+			name = willhabentracker;
 			sourceTree = "<group>";
 		};
 		AC821C181B9D809700CE3115 /* init */ = {
@@ -264,6 +307,7 @@
 				AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */,
 				AC80DE2A1B9DA40E007C88B5 /* libinit.a */,
 				ACFA34061B9F69AA00305377 /* findscholarships */,
+				AC5D5CF91BA1AF6500610E95 /* willhabentracker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,9 +315,10 @@
 		AC886AB71B99DC7E00972B2E /* web-explorer */ = {
 			isa = PBXGroup;
 			children = (
-				AC2369B41B9A1D56006D35C2 /* src */,
-				AC2369B21B9A1D42006D35C2 /* include */,
 				AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */,
+				AC5D5D021BA1AFF400610E95 /* willhabentracker.cpp */,
+				AC2369B21B9A1D42006D35C2 /* include */,
+				AC2369B41B9A1D56006D35C2 /* src */,
 			);
 			name = "web-explorer";
 			path = "findscholarships-new";
@@ -381,6 +426,23 @@
 			productReference = AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		AC5D5CF81BA1AF6500610E95 /* willhabentracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5D5CFD1BA1AF6500610E95 /* Build configuration list for PBXNativeTarget "willhabentracker" */;
+			buildPhases = (
+				AC5D5CF51BA1AF6500610E95 /* Sources */,
+				AC5D5CF61BA1AF6500610E95 /* Frameworks */,
+				AC5D5CF71BA1AF6500610E95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = willhabentracker;
+			productName = willhabentracker;
+			productReference = AC5D5CF91BA1AF6500610E95 /* willhabentracker */;
+			productType = "com.apple.product-type.tool";
+		};
 		AC80DE291B9DA40E007C88B5 /* init */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC80DE2D1B9DA40E007C88B5 /* Build configuration list for PBXNativeTarget "init" */;
@@ -436,6 +498,9 @@
 					AC1CFABE1B9C5E9200B755DD = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					AC5D5CF81BA1AF6500610E95 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					AC80DE291B9DA40E007C88B5 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -462,6 +527,7 @@
 				AC1CFABE1B9C5E9200B755DD /* htmlgen */,
 				AC80DE291B9DA40E007C88B5 /* init */,
 				ACFA34051B9F69AA00305377 /* findscholarships */,
+				AC5D5CF81BA1AF6500610E95 /* willhabentracker */,
 			);
 		};
 /* End PBXProject section */
@@ -521,6 +587,18 @@
 				AC1CFAD41B9C602900B755DD /* Title.cpp in Sources */,
 				AC1CFAD01B9C5FE500B755DD /* HtmlResult.cpp in Sources */,
 				AC1CFAD21B9C600F00B755DD /* Manager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5D5CF51BA1AF6500610E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5D5D011BA1AF7C00610E95 /* Database.cpp in Sources */,
+				AC5D5D031BA1AFF400610E95 /* willhabentracker.cpp in Sources */,
+				AC5D5D051BA1B08400610E95 /* DataItem.cpp in Sources */,
+				AC5D5D071BA1B0BF00610E95 /* Manager.cpp in Sources */,
+				AC5D5D091BA1B0E900610E95 /* Tracker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +742,48 @@
 				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
 					"$(OTHER_CFLAGS)",
 					"-I/opt/local/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC5D5CFE1BA1AF6500610E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_system-mt",
+					"-lboost_date_time-mt",
+					"-lboost_program_options-mt",
+					"-lcurl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC5D5CFF1BA1AF6500610E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-liconv",
+					"-lboost_date_time-mt",
+					"-lboost_system-mt",
+					"-lboost_program_options-mt",
+					"-lcurl",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -887,6 +1007,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AC5D5CFD1BA1AF6500610E95 /* Build configuration list for PBXNativeTarget "willhabentracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5D5CFE1BA1AF6500610E95 /* Debug */,
+				AC5D5CFF1BA1AF6500610E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		AC80DE2D1B9DA40E007C88B5 /* Build configuration list for PBXNativeTarget "init" */ = {
 			isa = XCConfigurationList;

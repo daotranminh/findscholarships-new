@@ -67,10 +67,6 @@ public:
 
 private:
   ConfigurationWillhabentracker();
-  
-  std::string
-  readLine(const std::string& filename, 
-	   const std::string& key);
 
   void
   readDestination(const std::string &filename);

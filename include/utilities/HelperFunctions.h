@@ -3,8 +3,6 @@
 
 #include <string>
 
-namespace findscholarships {
-
 void
 killSpecialChar(std::string& s,
                 char c);
@@ -33,7 +31,5 @@ getStringInBetween(const std::string &s,
 
 void
 convertToLower(std::string &s);
-    
-} // namespace findscholarships
 
 #endif // ___HELPER_FUNCTIONS_HPP___
