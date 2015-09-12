@@ -72,19 +72,22 @@ Tracker::getOneDataItem(const std::string &content,
     float price = 0;
     std::string desc = "";
     
-    while (it->text() != "<div class=\"media-body\">")
+    while (it->tagName() != "li")
     {
         ++it;
         
         // get url and title
-        if (it->tagName() == "a" && !link_read)
+        if (it->tagName() == "a" && it->text().find("class=\"info-1 w-brk ln-2") != std::string::npos && !link_read)
         {
             url = it->text();
-            url = getStringInBetween(url, "<a href=\"", "\" >");
+            url = getStringInBetween(url, "href=\"", "\" class=\"info-1 w-brk ln-2");
             url = "http://www.willhaben.at" + url;
+            
+            while (it->tagName() != "span") it++;
             
             title = it->content(content);
             strReplace(title, "\n", "");
+            strReplace(title, "\r", "");
             strTrim(title);
             
             link_read = true;
@@ -95,13 +98,14 @@ Tracker::getOneDataItem(const std::string &content,
         {
             if (!gratis)
             {
-                while (it->tagName() != "span") ++it;
-                ++it;
-                ++it;
-                str_price = it->text();
+                str_price = it->content(content);
                 strReplace(str_price, "\n", "");
+                strReplace(str_price, "\r", "");
+                strReplace(str_price, ",-", "");
+                strReplace(str_price, ".", "");
                 strTrim(str_price);
                 price = ::atof(str_price.c_str());
+
             }
         }
         else
@@ -114,8 +118,8 @@ Tracker::getOneDataItem(const std::string &content,
         if (it->tagName() == "p" && it->text().find("itemprop=\'description\'") != std::string::npos)
         {
             desc = it->content(content);
-            desc = desc.substr(1);
-            desc = desc.substr(1, desc.find("\n")-1);
+            strReplace(desc, "\n", "");
+            strReplace(desc, "\r", "");
             strTrim(desc);
         }
     }
@@ -154,23 +158,10 @@ Tracker::track(bool gratis)
     
     for (tree<HTML::Node>::iterator it = dom.begin(); it != dom.end(); ++it)
     {
-        if (it->tagName() == "li")
+        if (it->tagName()=="div" && it->text().find("class=\"media-body\"") != std::string::npos)
         {
-            //std::cout << it->text() << std::endl << std::endl;
-        
-//        if (it->tagName() == "li" && it->text().find("clearfix") != std::string::npos)
-//        {
-            // ToDo: check for ignore list
-  
-            std::string ct = it->content(content);
-            
-            if (ct.find("info-2 top-offset clearfix") != std::string::npos)
-            {
-                std::cout << ct << std::endl << std::endl;
-                DataItemPtr di = getOneDataItem(content, it, gratis);
-                if (!inIgnoreList(di->m_URL))
-                    db->add(di);
-            }
+            DataItemPtr di = getOneDataItem(content, it, gratis);
+            if (!inIgnoreList(di->m_URL)) db->add(di);
         }
     }
     
