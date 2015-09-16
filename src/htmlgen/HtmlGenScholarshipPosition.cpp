@@ -22,6 +22,7 @@ HtmlGenScholarshipPosition::generate(FetchedInfoScholarship &fis,
         {
             std::string ct = it->content(filecontent);
             strReplace(ct, "atitle", "a title");
+            strReplace(ct, "ahref", "a href");
             
             if (ct.find("scholarship-positions.com") != std::string::npos)
             {

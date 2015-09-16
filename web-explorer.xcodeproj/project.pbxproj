@@ -22,7 +22,6 @@
 		AC1CFA911B9A3B5E00B755DD /* DateConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369DF1B9A2577006D35C2 /* DateConverter.cpp */; };
 		AC1CFA921B9A3B5E00B755DD /* HelperFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E11B9A25A4006D35C2 /* HelperFunctions.cpp */; };
 		AC1CFA931B9A3B5E00B755DD /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2369E31B9A25D4006D35C2 /* Logger.cpp */; };
-		AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA21B9B781000B755DD /* fetch.cpp */; };
 		AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */; };
 		AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */; };
 		AC1CFAAB1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */; };
@@ -49,8 +48,9 @@
 		AC5D5D091BA1B0E900610E95 /* Tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC5D5D081BA1B0E900610E95 /* Tracker.cpp */; };
 		AC5D5D0A1BA1B2E300610E95 /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
 		AC5D5D0B1BA1B2E600610E95 /* libutilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA8B1B9A3B5300B755DD /* libutilities.a */; };
+		AC80C5F41BA84BDB009F12EE /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80C5F31BA84BDB009F12EE /* findscholarships.cpp */; };
+		AC80C5F61BA84C2D009F12EE /* fetch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80C5F51BA84C2D009F12EE /* fetch.cpp */; };
 		AC80DE341B9DB01C007C88B5 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
-		ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */; };
 		ACFA340E1B9F6A6E00305377 /* libhtml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */; };
 		ACFA340F1B9F6A6E00305377 /* libhtmlgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1CFABF1B9C5E9200B755DD /* libhtmlgen.a */; };
 		ACFA34101B9F6A6E00305377 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80DE2A1B9DA40E007C88B5 /* libinit.a */; };
@@ -94,7 +94,6 @@
 		AC1CFA7B1B9A3A1F00B755DD /* libhtml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhtml.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1CFA8B1B9A3B5300B755DD /* libutilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1CFA9B1B9B77DD00B755DD /* fetch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fetch; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC1CFAA21B9B781000B755DD /* fetch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fetch.cpp; path = src/fetch/fetch.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherBase.cpp; path = src/fetch/FetcherBase.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherDbworld.cpp; path = src/fetch/FetcherDbworld.cpp; sourceTree = SOURCE_ROOT; };
 		AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FetcherScholarshipLinks.cpp; path = src/fetch/FetcherScholarshipLinks.cpp; sourceTree = SOURCE_ROOT; };
@@ -131,8 +130,9 @@
 		AC5D5D041BA1B08400610E95 /* DataItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataItem.cpp; path = src/willhabentracker/DataItem.cpp; sourceTree = SOURCE_ROOT; };
 		AC5D5D061BA1B0BF00610E95 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Manager.cpp; path = src/willhabentracker/Manager.cpp; sourceTree = SOURCE_ROOT; };
 		AC5D5D081BA1B0E900610E95 /* Tracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tracker.cpp; path = src/willhabentracker/Tracker.cpp; sourceTree = SOURCE_ROOT; };
+		AC80C5F31BA84BDB009F12EE /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = findscholarships.cpp; path = src/findscholarships.cpp; sourceTree = SOURCE_ROOT; };
+		AC80C5F51BA84C2D009F12EE /* fetch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fetch.cpp; path = src/fetch.cpp; sourceTree = SOURCE_ROOT; };
 		AC80DE2A1B9DA40E007C88B5 /* libinit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libinit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findscholarships.cpp; sourceTree = SOURCE_ROOT; };
 		ACFA34061B9F69AA00305377 /* findscholarships */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findscholarships; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -202,7 +202,6 @@
 		AC1CFA951B9A3D1700B755DD /* fetch */ = {
 			isa = PBXGroup;
 			children = (
-				AC1CFAA21B9B781000B755DD /* fetch.cpp */,
 				AC1CFAA41B9B78C200B755DD /* FetcherBase.cpp */,
 				AC1CFAA61B9B79D800B755DD /* FetcherDbworld.cpp */,
 				AC1CFAAA1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp */,
@@ -323,7 +322,8 @@
 		AC886AB71B99DC7E00972B2E /* web-explorer */ = {
 			isa = PBXGroup;
 			children = (
-				AC80DE351B9DE5B3007C88B5 /* findscholarships.cpp */,
+				AC80C5F51BA84C2D009F12EE /* fetch.cpp */,
+				AC80C5F31BA84BDB009F12EE /* findscholarships.cpp */,
 				AC5D5D021BA1AFF400610E95 /* willhabentracker.cpp */,
 				AC2369B21B9A1D42006D35C2 /* include */,
 				AC2369B41B9A1D56006D35C2 /* src */,
@@ -575,10 +575,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1CFAA51B9B78C200B755DD /* FetcherBase.cpp in Sources */,
+				AC80C5F61BA84C2D009F12EE /* fetch.cpp in Sources */,
 				AC1CFAAB1B9B7A7700B755DD /* FetcherScholarshipLinks.cpp in Sources */,
 				AC1CFAAD1B9B7ADB00B755DD /* FetcherScholarshipPositions.cpp in Sources */,
 				AC1CFAA71B9B79D800B755DD /* FetcherDbworld.cpp in Sources */,
-				AC1CFAA31B9B781000B755DD /* fetch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFA340D1B9F69C300305377 /* findscholarships.cpp in Sources */,
+				AC80C5F41BA84BDB009F12EE /* findscholarships.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

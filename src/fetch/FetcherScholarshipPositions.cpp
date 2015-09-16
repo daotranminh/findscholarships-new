@@ -29,8 +29,9 @@ FetcherScholarshipPositions::fetchOneScholarshipPosition(std::ofstream &file_out
                                                          const std::string &link_title_str,
                                                          const std::string &deadline_str)
 {
-    std::string sign1 = "<a class=\"validating\" href=\"";
-    std::string sign2 = "\">";
+    //std::string sign1 = "<a class=\"validating\" href=\"";
+    std::string sign1 = "<a href=\"";
+    std::string sign2 = "\"";
     std::string sign3 = "\">";
     std::string sign4 = "</a>";
     
@@ -91,7 +92,7 @@ FetcherScholarshipPositions::fetch()
     
     for (tree<HTML::Node>::iterator it = beg; it != end; ++it)
     {
-        if (it->tagName() == "strong")
+        if (it->tagName() == "strong" || it->tagName() == "b")
         {
             ct = it->content(content_gmail);
             

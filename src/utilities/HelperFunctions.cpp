@@ -87,7 +87,7 @@ getStringInBetween(const std::string &s,
                    const std::string &send)
 {
     std::size_t beg = s.rfind(sbeg) + sbeg.length();
-    std::size_t end = s.rfind(send);
+    std::size_t end = s.find(send, beg+1);
     
     return s.substr(beg, end - beg);
 }

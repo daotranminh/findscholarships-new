@@ -103,6 +103,7 @@ DateConverter::convert(const std::string &str_date)
     
     strReplace(s, "&nbsp;", "");
     strReplace(s, "-", " ");
+    strReplace(s, ",", " ");
     
     std::size_t day = 0;
     std::size_t month = 0;
@@ -129,7 +130,16 @@ DateConverter::convert(const std::string &str_date)
     
     if (day == 0 || day > 31) return d;
     
-    d = DatePtr(new Date_t(year, month, day));
+    try
+    {
+        // just in case of crappy date from the source
+        d = DatePtr(new Date_t(year, month, day));
+    }
+    catch (boost::exception const&  ex)
+    {
+        DatePtr null_date;
+        return null_date;
+    }
     
     return d;
 }
