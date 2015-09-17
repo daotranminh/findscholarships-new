@@ -1,7 +1,7 @@
 #ifndef ___HTML_RESULT_HPP___
 #define ___HTML_RESULT_HPP___
 
-#include "Title.h"  // htmlgen
+#include "htmlgen/Title.h"
 
 namespace findscholarships {
 

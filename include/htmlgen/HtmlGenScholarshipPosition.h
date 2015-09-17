@@ -1,7 +1,7 @@
 #ifndef ___HTML_GEN_SCHOLARSHIP_POSITION_HPP___
 #define ___HTML_GEN_SCHOLARSHIP_POSITION_HPP___
 
-#include "HtmlGenBase.h"    // htmlgen
+#include "htmlgen/HtmlGenBase.h"
 
 namespace findscholarships {
 

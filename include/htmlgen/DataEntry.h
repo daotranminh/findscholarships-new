@@ -1,7 +1,7 @@
 #ifndef ___DATA_ENTRY_HPP___
 #define ___DATA_ENTRY_HPP___
 
-#include "Title.h"  // htmlgen
+#include "htmlgen/Title.h"
 
 namespace findscholarships {
 
