@@ -99,7 +99,7 @@ FetcherScholarshipPositions::fetch()
             // 20150908:
             // The link to the scholarship can be in the text content of this node or the previous node with tag <strong>.
             //
-            if (ct.find("Provided by:") != std::string::npos)
+            if (ct == "Provided by:")
             {
                 link_title_str = it->content(content_gmail);
                 if (link_title_str.find("href=\"") == std::string::npos) link_title_str = previous_bold_it->content(content_gmail);
