@@ -24,11 +24,15 @@ LIBS = \
 	$(BOOST_SERIALIZATION_LIBS) 
 	$(BOOST_GRAPH_LIBS)
 
-lib_LTLIBRARIES = libfetch.la
+lib_LTLIBRARIES = libhtmlgen.la
 
-libfetch_la_SOURCES = \
-	FetcherBase.cpp \
-	FetcherDbworld.cpp \
-	FetcherScholarshipLinks.cpp \
-	FetcherScholarshipPositions.cpp 
-
+libhtmlgen_la_SOURCES = \
+	Database.cpp \
+	DataEntry.cpp \
+	HtmlGenBase.cpp \
+	HtmlGenDbworld.cpp \
+	HtmlGenScholarshipPosition.cpp \
+	HtmlGenScholarshipsLinks.cpp \
+	HtmlResult.cpp \
+	Manager.cpp \
+	Title.cpp

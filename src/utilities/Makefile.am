@@ -24,11 +24,14 @@ LIBS = \
 	$(BOOST_SERIALIZATION_LIBS) 
 	$(BOOST_GRAPH_LIBS)
 
-lib_LTLIBRARIES = libfetch.la
+lib_LTLIBRARIES = libutilities.la
 
-libfetch_la_SOURCES = \
-	FetcherBase.cpp \
-	FetcherDbworld.cpp \
-	FetcherScholarshipLinks.cpp \
-	FetcherScholarshipPositions.cpp 
-
+libutilities_la_SOURCES = \
+	ConfigurationBase.cpp \
+	ConfigurationFindscholarships.cpp \
+	ConfigurationWillhabentracker.cpp \
+	ConstantStrings.cpp \
+	DateConverter.cpp \
+	HelperFunctions.cpp \
+	Logger.cpp \
+	TrackedSite.cpp

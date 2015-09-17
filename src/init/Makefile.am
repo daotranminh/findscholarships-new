@@ -24,11 +24,9 @@ LIBS = \
 	$(BOOST_SERIALIZATION_LIBS) 
 	$(BOOST_GRAPH_LIBS)
 
-lib_LTLIBRARIES = libfetch.la
+lib_LTLIBRARIES = libinit.la
 
-libfetch_la_SOURCES = \
-	FetcherBase.cpp \
-	FetcherDbworld.cpp \
-	FetcherScholarshipLinks.cpp \
-	FetcherScholarshipPositions.cpp 
-
+libinit_la_SOURCES = \
+	InitBase.cpp \
+	InitFindscholarships.cpp \
+	InitWillhabentracker.cpp

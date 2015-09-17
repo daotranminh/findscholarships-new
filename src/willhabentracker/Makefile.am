@@ -24,11 +24,10 @@ LIBS = \
 	$(BOOST_SERIALIZATION_LIBS) 
 	$(BOOST_GRAPH_LIBS)
 
-lib_LTLIBRARIES = libfetch.la
+lib_LTLIBRARIES = libwillhabentracker.la
 
-libfetch_la_SOURCES = \
-	FetcherBase.cpp \
-	FetcherDbworld.cpp \
-	FetcherScholarshipLinks.cpp \
-	FetcherScholarshipPositions.cpp 
-
+libwillhabentracker_la_SOURCES = \
+	Database.cpp \
+	DataItem.cpp \
+	Manager.cpp \
+	Tracker.cpp
